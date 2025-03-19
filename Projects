@@ -35,17 +35,17 @@ local Window = Rayfield:CreateWindow({
 })
 
 Rayfield:Notify({
-   Title = "Cookies Projects 🍪 | Dead Rails -Public Version-",
+   Title = "Cookies Projects 🍪 | Dead Rails",
    Content = "Enjoy the script!",
-   Duration = 10,
+   Duration = 15,
    Image = 4483362458,
 })
 
 local Tab = Window:CreateTab("Main", 4483362458) -- Title, Image
 local Section = Tab:CreateSection("Info")
-local Label = Tab:CreateLabel("Hello There! Thanks for using our script!", 4483362458, Color3.fromRGB(255, 255, 255), false) -- Title, Icon, Color,
+local Label = Tab:CreateLabel("Hello There! Thanks for using our Script!", 4483362458, Color3.fromRGB(255, 255, 255), false) -- Title, Icon, Color,
 
-local Label = Tab:CreateLabel("This Script is beta!,Try to look on 'script'!", 4483362458, Color3.fromRGB(255, 255, 255), false)
+local Label = Tab:CreateLabel("This Script is beta!,Try to look on 'Script'!", 4483362458, Color3.fromRGB(255, 255, 255), false)
 
 local Label = Tab:CreateLabel("Correct Game:Dead Rails", 4483362458, Color3.fromRGB(255, 255, 255), false)
 
@@ -53,7 +53,23 @@ local Label = Tab:CreateLabel("Total Script:???", 4483362458, Color3.fromRGB(255
 
 
 local Button = Tab:CreateButton({
-   Name = "Button Example",
+   Name = "Infinite Yield",
+   Callback = function()
+   
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Nameless Admin",
+   Callback = function()
+   
+   end,
+})
+
+local Tab = Window:CreateTab("🧾Script🧾", 4483362458) -- Title, Image
+local Section = Tab:CreateSection("🔥OP Script🔥")
+local Button = Tab:CreateButton({
+   Name = "",
    Callback = function()
    
    end,
