@@ -43,13 +43,13 @@ Rayfield:Notify({
 
 local Tab = Window:CreateTab("Main", 4483362458) -- Title, Image
 local Section = Tab:CreateSection("Info")
-local Label = Tab:CreateLabel("Hello There! Thanks for using our Script!", 4483362458, Color3.fromRGB(255, 255, 255), false) -- Title, Icon, Color,
+local Label = Tab:CreateLabel("Hello There! Thanks for using our Script!", 4483362458, Color3.fromRGB(50,50,50), false) -- Title, Icon, Color,
 
-local Label = Tab:CreateLabel("This Script is beta!,Try to look on 'Script'!", 4483362458, Color3.fromRGB(255, 255, 255), false)
+local Label = Tab:CreateLabel("This Script is beta!,Try to look on 'Script'!", 4483362458, Color3.fromRGB(50,50,50), false)
 
-local Label = Tab:CreateLabel("Correct Game:Dead Rails", 4483362458, Color3.fromRGB(255, 255, 255), false)
+local Label = Tab:CreateLabel("Correct Game:Dead Rails", 4483362458, Color3.fromRGB(50,50,50), false)
 
-local Label = Tab:CreateLabel("Total Script:???", 4483362458, Color3.fromRGB(255, 255, 255), false)
+local Label = Tab:CreateLabel("Total Script:???", 4483362458, Color3.fromRGB(50,50,50), false)
 
 
 local Button = Tab:CreateButton({
