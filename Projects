@@ -19,25 +19,32 @@ local Window = Rayfield:CreateWindow({
    Discord = {
       Enabled = false,
       Invite = "Coming Soon",
-      RememberJoins = true -- Set this to false to make them join the discord every time they load it up
+      RememberJoins = false -- Set this to false to make them join the discord every time they load it up
    },
 
    KeySystem = true,
    KeySettings = {
       Title = "🎩Projects Horus🎩",
-      Subtitle = "Required 🔑Key System🔑 for protected from Skiddes",
-      Note = "Join our discord group to get the key!",
+      Subtitle = "Dibutuhkan 🔑Key System🔑 untuk penjaga dari Skiddes!",
+      Note = "Join Discord Group untuk mendapatkan Key!",
       FileName = "Key...",
       SaveKey = true,
       GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
-      Key = {"Horus1"}
+      Key = {"Horus"}
    }
 })
 
 Rayfield:Notify({
-   Title = "🎩Projects Horus🎩|| Dead Rails",
-   Content = "Enjoy the script!",
-   Duration = 15,
+   Title = "🎩Projects Horus🎩|| Moderator Message",
+   Content = "Script ini di buat oleh Horus!",
+   Duration = 20,
+   Image = 4483362458,
+})
+
+Rayfield:Notify({
+   Title = "🎩Projects Horus🎩|| Moderator Message",
+   Content = "Selamat Menikmati script nya!",
+   Duration = 20,
    Image = 4483362458,
 })
 
