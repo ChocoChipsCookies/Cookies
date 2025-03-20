@@ -1,7 +1,7 @@
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 
 local Window = Rayfield:CreateWindow({
-   Name = "Projects 🎩 Horus 🎩| Dead Rails (Alpha)",
+   Name = "Projects 🎩 Horus 🎩| Dead Rails",
    Icon = 0, -- Icon in Topbar. Can use Lucide Icons (string) or Roblox Image (number). 0 to use no icon (default).
    LoadingTitle = "🎩 Projects Horus 🎩 | V-1.0",
    LoadingSubtitle = "by 🎩 Horus Dev 🎩",
@@ -47,7 +47,7 @@ local Label = Tab:CreateLabel("Hello There! Thanks for using our Script!", 44833
 
 local Label = Tab:CreateLabel("This Script is beta!,Try to look on 'Script'!", 4483362458, Color3.fromRGB(50,50,50), false)
 
-local Label = Tab:CreateLabel("Correct Game:Dead Rails (Alpha)", 4483362458, Color3.fromRGB(50,50,50), false)
+local Label = Tab:CreateLabel("Correct Game:Dead Rails", 4483362458, Color3.fromRGB(50,50,50), false)
 
 local Label = Tab:CreateLabel("Total Script:???", 4483362458, Color3.fromRGB(50,50,50), false)
 
