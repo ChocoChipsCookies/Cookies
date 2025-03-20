@@ -24,9 +24,9 @@ local Window = Rayfield:CreateWindow({
 
    KeySystem = true, -- Set this to true to use our key system
    KeySettings = {
-      Title = "Untitled",
+      Title = "Projects Cookies 🍪",
       Subtitle = "Key System",
-      Note = "Joim discord group to get key",
+      Note = "Join discord group to get key",
       FileName = "Key",
       SaveKey = true,
       GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
