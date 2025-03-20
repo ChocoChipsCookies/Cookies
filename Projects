@@ -1,10 +1,10 @@
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 
 local Window = Rayfield:CreateWindow({
-   Name = "Projects Cookies 🍪 | Dead Rails",
+   Name = "Projects 🎩 Horus 🎩| Dead Rails (Alpha)",
    Icon = 0, -- Icon in Topbar. Can use Lucide Icons (string) or Roblox Image (number). 0 to use no icon (default).
-   LoadingTitle = "Projects Cookies 🍪 | V-1.0",
-   LoadingSubtitle = "by Team Cookies 🍪",
+   LoadingTitle = "🎩 Projects Horus 🎩 | V-1.0",
+   LoadingSubtitle = "by 🎩 Horus Dev 🎩",
    Theme = "Default", -- Check https://docs.sirius.menu/rayfield/configuration/themes
 
    DisableRayfieldPrompts = false,
@@ -24,18 +24,18 @@ local Window = Rayfield:CreateWindow({
 
    KeySystem = true,
    KeySettings = {
-      Title = "Projects Cookies 🍪",
-      Subtitle = "Key System",
-      Note = "Join discord group to get key",
-      FileName = "Key",
+      Title = "🎩Projects Horus🎩",
+      Subtitle = "Required 🔑Key System🔑 for protected from Skiddes",
+      Note = "Join our discord group to get the key!",
+      FileName = "Key...",
       SaveKey = true,
       GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
-      Key = {"Chips"}
+      Key = {"Horus1"}
    }
 })
 
 Rayfield:Notify({
-   Title = "Cookies Projects 🍪 | Dead Rails",
+   Title = "🎩Projects Horus🎩|| Dead Rails",
    Content = "Enjoy the script!",
    Duration = 15,
    Image = 4483362458,
@@ -47,7 +47,7 @@ local Label = Tab:CreateLabel("Hello There! Thanks for using our Script!", 44833
 
 local Label = Tab:CreateLabel("This Script is beta!,Try to look on 'Script'!", 4483362458, Color3.fromRGB(50,50,50), false)
 
-local Label = Tab:CreateLabel("Correct Game:Dead Rails", 4483362458, Color3.fromRGB(50,50,50), false)
+local Label = Tab:CreateLabel("Correct Game:Dead Rails (Alpha)", 4483362458, Color3.fromRGB(50,50,50), false)
 
 local Label = Tab:CreateLabel("Total Script:???", 4483362458, Color3.fromRGB(50,50,50), false)
 
@@ -66,11 +66,92 @@ local Button = Tab:CreateButton({
    end,
 })
 
-local Tab = Window:CreateTab("🧾Script🧾", 4483362458) -- Title, Image
-local Section = Tab:CreateSection("🔥OP Script🔥")
+local Tab = Window:CreateTab("Items", 4483362458) -- Title, Image
+local Section = Tab:CreateSection("Items")
 local Button = Tab:CreateButton({
-   Name = "",
+   Name = "Test",
    Callback = function()
    
    end,
 })
+
+local Tab = Window:CreateTab("Visuals", 4483362458)
+local Section = Tab:CreateSection("Visuals")
+local Button = Tab:CreateButton({
+   Name = "Test",
+   Callback = function()
+   
+   end,
+})
+
+local Tab = Window:CreateTab("Combat, 4483362458)
+local Section = Tab:CreateSection("Combat")
+local Button = Tab:CreateButton({
+   Name = "Test",
+   Callback = function()
+   
+   end,
+})
+
+local Tab = Window:CreateTab("Players", 4483362458)
+local Section = Tab:CreateSection("Players")
+local Button = Tab:CreateButton({
+   Name = "Test",
+   Callback = function()
+   
+   end,
+})
+
+local Tab = Window:CreateTab("Auto", 4483362458)
+local Section = Tab:CreateSection("Auto")
+local Button = Tab:CreateButton({
+   Name = "Test",
+   Callback = function()
+   
+   end,
+})
+
+local Tab = Window:CreateTab("Setting", 4483362458)
+local Section = Tab:CreateSection("Setting")
+{
+    TextColor = Color3.fromRGB(240, 240, 240),
+
+    Background = Color3.fromRGB(25, 25, 25),
+    Topbar = Color3.fromRGB(34, 34, 34),
+    Shadow = Color3.fromRGB(20, 20, 20),
+
+    NotificationBackground = Color3.fromRGB(20, 20, 20),
+    NotificationActionsBackground = Color3.fromRGB(230, 230, 230),
+
+    TabBackground = Color3.fromRGB(80, 80, 80),
+    TabStroke = Color3.fromRGB(85, 85, 85),
+    TabBackgroundSelected = Color3.fromRGB(210, 210, 210),
+    TabTextColor = Color3.fromRGB(240, 240, 240),
+    SelectedTabTextColor = Color3.fromRGB(50, 50, 50),
+
+    ElementBackground = Color3.fromRGB(35, 35, 35),
+    ElementBackgroundHover = Color3.fromRGB(40, 40, 40),
+    SecondaryElementBackground = Color3.fromRGB(25, 25, 25),
+    ElementStroke = Color3.fromRGB(50, 50, 50),
+    SecondaryElementStroke = Color3.fromRGB(40, 40, 40),
+            
+    SliderBackground = Color3.fromRGB(50, 138, 220),
+    SliderProgress = Color3.fromRGB(50, 138, 220),
+    SliderStroke = Color3.fromRGB(58, 163, 255),
+
+    ToggleBackground = Color3.fromRGB(30, 30, 30),
+    ToggleEnabled = Color3.fromRGB(0, 146, 214),
+    ToggleDisabled = Color3.fromRGB(100, 100, 100),
+    ToggleEnabledStroke = Color3.fromRGB(0, 170, 255),
+    ToggleDisabledStroke = Color3.fromRGB(125, 125, 125),
+    ToggleEnabledOuterStroke = Color3.fromRGB(100, 100, 100),
+    ToggleDisabledOuterStroke = Color3.fromRGB(65, 65, 65),
+
+    DropdownSelected = Color3.fromRGB(40, 40, 40),
+    DropdownUnselected = Color3.fromRGB(30, 30, 30),
+
+    InputBackground = Color3.fromRGB(30, 30, 30),
+    InputStroke = Color3.fromRGB(65, 65, 65),
+    PlaceholderColor = Color3.fromRGB(178, 178, 178)
+}
+
