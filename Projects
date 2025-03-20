@@ -43,7 +43,7 @@ Rayfield:Notify({
 
 local Tab = Window:CreateTab("Main", 4483362458) -- Title, Image
 local Section = Tab:CreateSection("Info")
-local Label = Tab:CreateLabel("Hello There! Thanks for using our Script!", 4483362458, Color3.fromRGB(50,50,50), false) -- Title, Icon, Color,
+local Label = Tab:CreateLabel("Hello There!, Thanks for using our Script!", 4483362458, Color3.fromRGB(50,50,50), false) -- Title, Icon, Color,
 
 local Label = Tab:CreateLabel("This Script is beta!,Try to look on 'Script'!", 4483362458, Color3.fromRGB(50,50,50), false)
 
@@ -66,8 +66,8 @@ local Button = Tab:CreateButton({
    end,
 })
 
-local Tab = Window:CreateTab("Items", 4483362458) -- Title, Image
-local Section = Tab:CreateSection("Items")
+local Tab = Window:CreateTab("🛠️Items🛠️", 4483362458) -- Title, Image
+local Section = Tab:CreateSection("🛠️Items🛠️")
 local Button = Tab:CreateButton({
    Name = "Test",
    Callback = function()
@@ -75,8 +75,8 @@ local Button = Tab:CreateButton({
    end,
 })
 
-local Tab = Window:CreateTab("Visuals", 4483362458)
-local Section = Tab:CreateSection("Visuals")
+local Tab = Window:CreateTab("🔮Visuals🔮", 4483362458)
+local Section = Tab:CreateSection("🔮Visuals🔮")
 local Button = Tab:CreateButton({
    Name = "Test",
    Callback = function()
@@ -84,8 +84,8 @@ local Button = Tab:CreateButton({
    end,
 })
 
-local Tab = Window:CreateTab("Combat, 4483362458)
-local Section = Tab:CreateSection("Combat")
+local Tab = Window:CreateTab("⚔️Combat⚔️", 4483362458)
+local Section = Tab:CreateSection("⚔️Combat⚔️")
 local Button = Tab:CreateButton({
    Name = "Test",
    Callback = function()
@@ -93,8 +93,8 @@ local Button = Tab:CreateButton({
    end,
 })
 
-local Tab = Window:CreateTab("Players", 4483362458)
-local Section = Tab:CreateSection("Players")
+local Tab = Window:CreateTab("👤Players👤", 4483362458)
+local Section = Tab:CreateSection("👤Players👤")
 local Button = Tab:CreateButton({
    Name = "Test",
    Callback = function()
@@ -102,8 +102,8 @@ local Button = Tab:CreateButton({
    end,
 })
 
-local Tab = Window:CreateTab("Auto", 4483362458)
-local Section = Tab:CreateSection("Auto")
+local Tab = Window:CreateTab("🦾Auto🦾", 4483362458)
+local Section = Tab:CreateSection("🦾Auto🦾")
 local Button = Tab:CreateButton({
    Name = "Test",
    Callback = function()
@@ -111,7 +111,14 @@ local Button = Tab:CreateButton({
    end,
 })
 
-local Tab = Window:CreateTab("Setting", 4483362458)
-local Section = Tab:CreateSection("Setting")
-Window.ModifyTheme('Amethyst')
+local Tab = Window:CreateTab("⚙️Setting⚙️", 4483362458)
+local Section = Tab:CreateSection("⚙️Setting⚙️")
+local Button = Tab:CreateButton({
+   Name = "Test",
+   Callback = function()
+   
+   end,
+})
+
+
     
