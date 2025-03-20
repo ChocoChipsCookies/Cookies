@@ -24,7 +24,7 @@ local Window = Rayfield:CreateWindow({
 
    KeySystem = true, -- Set this to true to use our key system
    KeySettings = {
-      Title = "Projects Cookies 🍪",
+      Title = "Untitle",
       Subtitle = "Key System",
       Note = "Join discord group to get key",
       FileName = "Key",
