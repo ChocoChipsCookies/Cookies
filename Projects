@@ -3,7 +3,7 @@ local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 
 local Window = Rayfield:CreateWindow({
    Name = "Projects 🎩 Horus 🎩| Dead Rails",
-   Icon = 849477617938,
+   Icon = 0,
    LoadingTitle = "🎩 Projects Horus 🎩 | V-1.0",
    LoadingSubtitle = "by 🎩 Horus Dev 🎩",
    Theme = "Default",
@@ -20,7 +20,7 @@ local Window = Rayfield:CreateWindow({
    Discord = {
       Enabled = false,
       Invite = "Coming Soon",
-      RememberJoins = false -- Set this to false to make them join the discord every time they load it up
+      RememberJoins = false,
    },
 
    KeySystem = true,
@@ -49,7 +49,7 @@ Rayfield:Notify({
    Image = 4483362458,
 })
 
-local Tab = Window:CreateTab("🧾Main🧾", 105711979102) -- Title, Image ,Color
+local Tab = Window:CreateTab("🧾Main🧾", 4483362458) -- Title, Image ,Color
 Section = Tab:CreateSection("❔Info❔")
 local Label = Tab:CreateLabel("Hello There!, Thanks for using our Hub!", 4483362458, Color3.fromRGB(50,50,50), false) -- Title, Icon, Color,
 
