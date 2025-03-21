@@ -102,7 +102,7 @@ local Button = Tab:CreateButton({
 
 local Tab = Window:CreateTab("👤Players👤", 4483362458)
 local Section = Tab:CreateSection("👤Players👤")
-local Toggle = MainTab:CreateToggle({
+local Toggle = Tab:CreateToggle({
    Name = "Infinite Jump",
    CurrentValue = false,
    Flag = "Toggle1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
@@ -121,7 +121,7 @@ game:GetService"Players".LocalPlayer.Character:FindFirstChildOfClass'Humanoid':C
 
 
 
-local Slider = MainTab:CreateSlider({
+local Slider = Tab:CreateSlider({
    Name = "WalkSpeed",
    Range = {16, 200},
    Increment = 10,
@@ -136,7 +136,7 @@ game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = v
 
 
 
-local Slider = MainTab:CreateSlider({
+local Slider = Tab:CreateSlider({
    Name = "JumpPower",
    Range = {50, 300},
    Increment = 10,
@@ -167,6 +167,3 @@ local Button = Tab:CreateButton({
    
    end,
 })
-
-
-    
