@@ -37,6 +37,20 @@ local Window = Rayfield:CreateWindow({
 
 Rayfield:Notify({
    Title = "🎩Projects Horus🎩|| Moderator Message",
+   Content = "English :⚠️ WARNING ⚠️: THIS HUB IS STILL IN BETA/UNDER PROGRESS, THERE MAY BE A BUG/GLITCH IN ONE OF THE SCRIPT!!!",
+   Duration = 20,
+   Image = 4483362458,
+})
+
+Rayfield:Notify({
+   Title = "🎩Projects Horus🎩|| Moderator Message",
+   Content = "Indonesian :⚠️ PERINGATAN ⚠️: HUB INI MASIH BETA/PROGRES, MUNGKIN ADA BUG/GLITCH PADA SALAH SATU SKRIP!!!",
+   Duration = 20,
+   Image = 4483362458,
+})
+
+Rayfield:Notify({
+   Title = "🎩Projects Horus🎩|| Moderator Message",
    Content = "Script ini di buat oleh Horus!",
    Duration = 20,
    Image = 4483362458,
