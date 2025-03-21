@@ -113,6 +113,7 @@ local Toggle = Tab:CreateToggle({
 game:GetService("UserInputService").JumpRequest:connect(function()
             if InfiniteJumpEnabled then
 
+
 game:GetService"Players".LocalPlayer.Character:FindFirstChildOfClass'Humanoid':ChangeState("Jumping")
             end
         end)
@@ -128,7 +129,7 @@ local Slider = Tab:CreateSlider({
    Suffix = "WalkSpeed",
    CurrentValue = 10,
    Flag = "Slider1",
-   Callback = function(v)
+   Callback = function(Value)
 
 game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = v
    end,
@@ -143,7 +144,7 @@ local Slider = Tab:CreateSlider({
    Suffix = "JumpPower",
    CurrentValue = 10,
    Flag = "Slider1",
-   Callback = function(v)
+   Callback = function(Value)
 
 game.Players.LocalPlayer.Character.Humanoid.JumpPower = v
    end,
