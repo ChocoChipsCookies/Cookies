@@ -1,3 +1,4 @@
+
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 
 local Window = Rayfield:CreateWindow({
@@ -13,7 +14,7 @@ local Window = Rayfield:CreateWindow({
    ConfigurationSaving = {
       Enabled = true,
       FolderName = nil, -- Create a custom folder for your hub/game
-      FileName = "Big Hub"
+      FileName = "🎩 Projects Horus🎩"
    },
 
    Discord = {
@@ -30,7 +31,7 @@ local Window = Rayfield:CreateWindow({
       FileName = "Key",
       SaveKey = true,
       GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
-      Key = {"Choco Chips Cookies"}
+      Key = {"Horus1"}
    }
 })
 
@@ -50,13 +51,13 @@ Rayfield:Notify({
 
 local Tab = Window:CreateTab("Main", 4483362458) -- Title, Image
 local Section = Tab:CreateSection("Info")
-local Label = Tab:CreateLabel("Hello There!, Thanks for using our Script!", 4483362458, Color3.fromRGB(50,50,50), false) -- Title, Icon, Color,
+local Label = Tab:CreateLabel("Hello There!, Thanks for using our Hub!", 4483362458, Color3.fromRGB(50,50,50), false) -- Title, Icon, Color,
 
-local Label = Tab:CreateLabel("This Script is beta!,Try to look on 'Script'!", 4483362458, Color3.fromRGB(50,50,50), false)
+local Label = Tab:CreateLabel("This Hub is beta!,Try to look on 'Items'!", 4483362458, Color3.fromRGB(50,50,50), false)
 
-local Label = Tab:CreateLabel("Correct Game:Dead Rails", 4483362458, Color3.fromRGB(50,50,50), false)
+local Label = Tab:CreateLabel("Correct Game : Dead Rails", 4483362458, Color3.fromRGB(50,50,50), false)
 
-local Label = Tab:CreateLabel("Total Script:???", 4483362458, Color3.fromRGB(50,50,50), false)
+local Label = Tab:CreateLabel("Total Script : ???", 4483362458, Color3.fromRGB(50,50,50), false)
 
 
 local Button = Tab:CreateButton({
@@ -107,7 +108,7 @@ local Toggle = Tab:CreateToggle({
    CurrentValue = false,
    Flag = "Toggle1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
    Callback = function(InfiniteJumpEnabled)
-       local InfiniteJumpEnabled = true
+       local InfiniteJumpEnabled = false
 
 
 game:GetService("UserInputService").JumpRequest:connect(function()
@@ -153,6 +154,15 @@ game.Players.LocalPlayer.Character.Humanoid.JumpPower = v
 
 local Tab = Window:CreateTab("🦾Auto🦾", 4483362458)
 local Section = Tab:CreateSection("🦾Auto🦾")
+local Button = Tab:CreateButton({
+   Name = "Test",
+   Callback = function()
+   
+   end,
+})
+
+local Tab = Window:CreateTab("📜Hub📜", 4483362458)
+local Section = Tab:CreateSection("📜 Credits to Owner of this Hub 📜")
 local Button = Tab:CreateButton({
    Name = "Test",
    Callback = function()
