@@ -65,15 +65,15 @@ Rayfield:Notify({
 
 local Tab = Window:CreateTab("🧾Main🧾", 4483362458) -- Title, Image ,Color
 Section = Tab:CreateSection("❔Info❔")
-local Label = Tab:CreateLabel("Hello There!, Thanks for using our Hub!", 4483362458, Color3.fromRGB(27, 42, 53), false) -- Title, Icon, Color,
+local Label = Tab:CreateLabel("Hello There!, Thanks for using our Hub!", 4483362458, Color3.fromRGB(98, 37, 209), false) -- Title, Icon, Color,
 
-local Label = Tab:CreateLabel("This Hub is beta!,Try to look on 'Items'!", 4483362458, Color3.fromRGB(27, 42, 53), false)
+local Label = Tab:CreateLabel("This Hub is beta!,Try to look on 'Items'!", 4483362458, Color3.fromRGB(98, 37, 209), false)
 
-local Label = Tab:CreateLabel("Correct Game : Dead Rails", 4483362458, Color3.fromRGB(27, 42, 53), false)
+local Label = Tab:CreateLabel("Correct Game : Dead Rails", 4483362458, Color3.fromRGB(98, 37, 209), false)
 
-local Label = Tab:CreateLabel("Total Script : ???", 4483362458, Color3.fromRGB(27, 42, 53), false)
+local Label = Tab:CreateLabel("Total Script : ???", 4483362458, Color3.fromRGB(98, 37, 209), false)
 
-local Label = Tab:CreateLabel("↓↓Try These 2 Scripts!↓↓", 4483362458, Color3.fromRGB(27, 42, 53), false)
+local Label = Tab:CreateLabel("↓↓Try These 2 Scripts!↓↓", 4483362458, Color3.fromRGB(98, 37, 209), false)
 
 local Button = Tab:CreateButton({
    Name = "Infinite Yield",
@@ -135,7 +135,7 @@ game:GetService"Players".LocalPlayer.Character:FindFirstChildOfClass'Humanoid':C
 })
 
 
-local Label = Tab:CreateLabel("⚠️WARNING⚠️:Infinite Jump it's BETA Just Click 1 time and don't SPAM!", 4483362458, Color3.fromRGB(27, 42, 53), false)
+local Label = Tab:CreateLabel("⚠️WARNING⚠️:Infinite Jump it's BETA Just Click 1 time and don't SPAM!", 4483362458, Color3.fromRGB(98, 37, 209), false)
 
 
 local Slider = Tab:CreateSlider({
