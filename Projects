@@ -108,7 +108,10 @@ local Toggle = Tab:CreateToggle({
    CurrentValue = false,
    Flag = "Toggle1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
    Callback = function(InfiniteJumpEnabled)
-       local InfiniteJumpEnabled = false
+       local InfiniteJumpEnabled = true
+
+
+Toggle.MouseToggle1Click:Connect(InfiniteJumpEnabled)
 
 
 game:GetService("UserInputService").JumpRequest:connect(function()
@@ -126,9 +129,9 @@ game:GetService"Players".LocalPlayer.Character:FindFirstChildOfClass'Humanoid':C
 local Slider = Tab:CreateSlider({
    Name = "WalkSpeed",
    Range = {16, 200},
-   Increment = 10,
+   Increment = 1,
    Suffix = "WalkSpeed",
-   CurrentValue = 1,
+   CurrentValue = 16,
    Flag = "Slider1",
    Callback = function(v)
 
@@ -141,9 +144,9 @@ game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = v
 local Slider = Tab:CreateSlider({
    Name = "JumpPower",
    Range = {50, 300},
-   Increment = 10,
+   Increment = 1,
    Suffix = "JumpPower",
-   CurrentValue = 1,
+   CurrentValue = 50,
    Flag = "Slider1",
    Callback = function(v)
 
