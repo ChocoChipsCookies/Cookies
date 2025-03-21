@@ -113,8 +113,6 @@ local Toggle = Tab:CreateToggle({
 game:GetService("UserInputService").JumpRequest:connect(function()
             if InfiniteJumpEnabled then
 
-Toggle.MouseToggle1Click:Connect(InfiniteJumpEnabled)
-
 game:GetService"Players".LocalPlayer.Character:FindFirstChildOfClass'Humanoid':ChangeState("Jumping")
             end
         end)
