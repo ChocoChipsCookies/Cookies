@@ -3,7 +3,7 @@ local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 
 local Window = Rayfield:CreateWindow({
    Name = "Projects 🎩 Horus 🎩| Dead Rails",
-   Icon = 93444111820847,
+   Icon = 128003747944019,
    LoadingTitle = "🎩 Projects Horus 🎩 | V-1.0",
    LoadingSubtitle = "by 🎩 Horus Dev 🎩",
    Theme = "Default",
