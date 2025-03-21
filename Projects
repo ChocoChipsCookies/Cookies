@@ -127,9 +127,9 @@ local Slider = Tab:CreateSlider({
    Range = {16, 200},
    Increment = 10,
    Suffix = "WalkSpeed",
-   CurrentValue = 10,
+   CurrentValue = 1,
    Flag = "Slider1",
-   Callback = function(Value)
+   Callback = function(v)
 
 game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = v
    end,
@@ -142,9 +142,9 @@ local Slider = Tab:CreateSlider({
    Range = {50, 300},
    Increment = 10,
    Suffix = "JumpPower",
-   CurrentValue = 10,
+   CurrentValue = 1,
    Flag = "Slider1",
-   Callback = function(Value)
+   Callback = function(v)
 
 game.Players.LocalPlayer.Character.Humanoid.JumpPower = v
    end,
