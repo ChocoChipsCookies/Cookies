@@ -98,7 +98,7 @@ local Button = Tab:CreateButton({
    end,
 })
 
-local Label = Tab:CreateLabel("More Script it's Coming Soon", 4483362458, Color3.fromRGB(98, 37, 209), false)
+local Label = Tab:CreateLabel("More Script it's Coming Soon...", 4483362458, Color3.fromRGB(98, 37, 209), false)
 
 local Tab = Window:CreateTab("🔮Visuals🔮", 4483362458)
 local Section = Tab:CreateSection("🔮Visuals🔮")
@@ -109,32 +109,35 @@ local Button = Tab:CreateButton({
    end,
 })
 
-local Label = Tab:CreateLabel("More Script it's Coming Soon", 4483362458, Color3.fromRGB(98, 37, 209), false)
+local Label = Tab:CreateLabel("More Script it's Coming Soon...", 4483362458, Color3.fromRGB(98, 37, 209), false)
 
 local Tab = Window:CreateTab("⚔️Combat⚔️", 4483362458)
 local Section = Tab:CreateSection("⚔️Combat⚔️")
 local Button = Tab:CreateButton({
-   Name = "",
+   Name = "AimBot",
    Callback = function()
-   
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/ChocoChipsCookies/Test/refs/heads/main/AimBot"))()
    end,
 })
 
 local Button = Tab:CreateButton({
-   Name = "",
+   Name = "NPC Lock || v2.0",
    Callback = function()
-   
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/ChocoChipsCookies/Test/refs/heads/main/NPC%20Lock%20v2"))()
    end,
 })
 
 local Button = Tab:CreateButton({
-   Name = "",
+   Name = "NPC Lock || v1.0 Old",
    Callback = function()
-   
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/ChocoChipsCookies/Test/refs/heads/main/NPC%20Lock"))()
    end,
 })
 
-local Label = Tab:CreateLabel("More Script it's Coming Soon", 4483362458, Color3.fromRGB(98, 37, 209), false)
+local Label = Tab:CreateLabel("Please try my old NPC Lock 🙂↑↑", 4483362458, Color3.fromRGB(98, 37, 209), false)
+
+
+local Label = Tab:CreateLabel("More Script it's Coming Soon...", 4483362458, Color3.fromRGB(98, 37, 209), false)
 
 local Tab = Window:CreateTab("👤Players👤", 4483362458)
 local Section = Tab:CreateSection("👤Players👤")
@@ -186,6 +189,7 @@ game.Players.LocalPlayer.Character.Humanoid.JumpPower = v
    end,
 })
 
+local Label = Tab:CreateLabel("More Script it's Coming Soon...", 4483362458, Color3.fromRGB(98, 37, 209), false)
 
 local Tab = Window:CreateTab("🦾Auto🦾", 4483362458)
 local Section = Tab:CreateSection("🦾Auto🦾")
@@ -195,6 +199,8 @@ local Button = Tab:CreateButton({
    
    end,
 })
+
+local Label = Tab:CreateLabel("More Script it's Coming Soon...", 4483362458, Color3.fromRGB(98, 37, 209), false)
 
 local Tab = Window:CreateTab("📜Hub📜", 4483362458)
 local Section = Tab:CreateSection("📜 Credits to Owner of this Hub 📜")
