@@ -98,6 +98,8 @@ local Button = Tab:CreateButton({
    end,
 })
 
+local Label = Tab:CreateLabel("More Script it's Coming Soon", 4483362458, Color3.fromRGB(98, 37, 209), false)
+
 local Tab = Window:CreateTab("🔮Visuals🔮", 4483362458)
 local Section = Tab:CreateSection("🔮Visuals🔮")
 local Button = Tab:CreateButton({
@@ -107,14 +109,32 @@ local Button = Tab:CreateButton({
    end,
 })
 
+local Label = Tab:CreateLabel("More Script it's Coming Soon", 4483362458, Color3.fromRGB(98, 37, 209), false)
+
 local Tab = Window:CreateTab("⚔️Combat⚔️", 4483362458)
 local Section = Tab:CreateSection("⚔️Combat⚔️")
 local Button = Tab:CreateButton({
-   Name = "Test",
+   Name = "",
    Callback = function()
    
    end,
 })
+
+local Button = Tab:CreateButton({
+   Name = "",
+   Callback = function()
+   
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "",
+   Callback = function()
+   
+   end,
+})
+
+local Label = Tab:CreateLabel("More Script it's Coming Soon", 4483362458, Color3.fromRGB(98, 37, 209), false)
 
 local Tab = Window:CreateTab("👤Players👤", 4483362458)
 local Section = Tab:CreateSection("👤Players👤")
