@@ -5182,9 +5182,9 @@ Tab:AddButton({
         setclipboard("R.I.P RED_BUBU...")
         OrionLib:MakeNotification({
             Name = "Projects Cookies 🍪 || Creator Message🌐",
-            Content = "R.I.P RED_BUBU...",
-            Image = "rbxassetid://7733993369",
-            Time = 10
+            Content = "Yo, How are you?, good?, that's sound good LOL",
+            Image = "rbxassetid://120765212623859",
+            Time = 15
         })
     end    
 })
@@ -5196,12 +5196,12 @@ local Section = Tab:AddSection({
 Tab:AddButton({
     Name = "Team Cookies🍪",
     Callback = function()
-        setclipboard("❤️Thanks You For Support Me❤️!")
+        setclipboard("❤️Thanks for using our Script❤️!")
         OrionLib:MakeNotification({
             Name = "Projects Cookies 🍪 || Creator Message🌐",
-            Content = "❤️Thanks You For Support Me❤️!",
+            Content = "❤️Thanks for using our Script❤️!",
             Image = "rbxassetid://13948965891",
-            Time = 10
+            Time = 15
         })
     end    
 })
@@ -5218,7 +5218,7 @@ Tab:AddButton({
             Name = "Projects Cookies 🍪 || Fuvva Message🌐",
             Content = "👉 Little ❤️ Cookies 👈",
             Image = "rbxassetid://11821088983",
-            Time = 10
+            Time = 15
         })
     end    
 })
