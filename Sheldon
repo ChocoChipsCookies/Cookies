@@ -1,0 +1,569 @@
+local gui = Instance.new("ScreenGui")
+gui.Name = "Young Sheldon Gui"
+gui.Parent = game.CoreGui
+
+local Ui = Instance.new("Frame")
+Ui.Size = UDim2.new(0.0, 489, 0.0, 300)
+Ui.Position = UDim2.new(0.0, 0, 0.0, 0)
+Ui.BackgroundColor3 = Color3.new(1, 1, 1)
+Ui.BorderColor3 = Color3.new(0, 0, 0)
+Ui.BorderSizePixel = 0
+Ui.Active = true
+Ui.BackgroundTransparency = 0.6
+Ui.Draggable = true
+Ui.Parent = gui
+
+local uic = Instance.new("UICorner")
+uic.CornerRadius = UDim.new(0, 5)
+uic.Parent = Ui
+
+local Image = Instance.new("ImageLabel")
+Image.Size = UDim2.new(1.004, 0, 1.0, 0)
+Image.Position = UDim2.new(0.0, 0, 0.0, 0)
+Image.BackgroundColor3 = Color3.new(0, 0, 0)
+Image.ImageColor3 = Color3.new(1, 1, 1)
+Image.Image = "rbxassetid://14902240136"
+Image.ImageTransparency = 0.4
+Image.Parent = Ui
+
+Image.BackgroundTransparency = 1
+
+local uic = Instance.new("UICorner")
+uic.CornerRadius = UDim.new(0, 5)
+uic.Parent = Image
+
+local Text = Instance.new("TextLabel")
+Text.Size = UDim2.new(1.0, 0, 0.1, 20)
+Text.Position = UDim2.new(0.0, 0, 0.0, 0)
+Text.BackgroundColor3 = Color3.new(0, 0, 0)
+Text.BorderColor3 = Color3.new(0, 0, 0)
+Text.BorderSizePixel = 1
+Text.Text = "Sheldon"
+Text.BackgroundTransparency = 1
+Text.TextColor3 = Color3.new(0, 0, 0)
+Text.Font = Enum.Font.Highway
+Text.Parent = Image
+Text.TextSize = 30
+
+local  close = Instance.new("TextButton")
+ close.Size = UDim2.new(0.2, 0, 0.1, 0)
+ close.Position = UDim2.new(0.7, 32, 0.0, 5)
+ close.BackgroundColor3 = Color3.new(1, 1, 1)
+ close.BorderColor3 = Color3.new(0, 0, 0)
+ close.BorderSizePixel = 0
+ close.Text = "Close"
+ close.BackgroundTransparency = 0.5
+ close.TextColor3 = Color3.new(0, 0, 0)
+ close.Font = Enum.Font.Montserrat
+ close.Parent = Ui
+close.TextSize = 19
+close.MouseButton1Click:Connect(function()
+Ui:Remove()
+end)
+
+local uic = Instance.new("UICorner")
+uic.CornerRadius = UDim.new(0, 5)
+uic.Parent = close
+
+local TextBox = Instance.new("TextBox")
+TextBox.Size = UDim2.new(0.6, 29, 0.7, 7)
+TextBox.Position = UDim2.new(0.0, 4, 0.0, 45)
+TextBox.BackgroundColor3 = Color3.new(1, 1, 1)
+TextBox.BorderColor3 = Color3.new(0, 0, 0)
+TextBox.BorderSizePixel = 0
+TextBox.Text = ""
+TextBox.PlaceholderText = "Execute His Thoughts"
+TextBox.PlaceholderColor3 = Color3.fromRGB(0, 0, 0)
+TextBox.TextColor3 = Color3.new(0, 0, 0)
+TextBox.BackgroundTransparency = 0.4
+TextBox.Font = Enum.Font.SpecialElite
+TextBox.TextSize = 18
+TextBox.Parent = Image
+TextBox.TextYAlignment = Enum.TextYAlignment.Top
+TextBox.TextXAlignment = Enum.TextXAlignment.Left
+TextBox.ClearTextOnFocus = failed
+TextBox.MultiLine = true
+TextBox.TextWrapped = true
+
+local Exe = Instance.new("TextButton")
+Exe.Size = UDim2.new(0.1, 22, 0.1, 0)
+Exe.Position = UDim2.new(0.0, 4, 0.0, 266)
+Exe.BackgroundColor3 = Color3.new(1, 1, 1)
+Exe.BorderColor3 = Color3.new(0, 0, 0)
+Exe.BorderSizePixel = 0
+Exe.Text = "Execute"
+Exe.BackgroundTransparency = 0.1
+Exe.TextColor3 = Color3.new(0, 0, 0)
+Exe.Font = Enum.Font.Montserrat
+Exe.Parent = Image
+Exe.TextSize = 21
+Exe.MouseButton1Click:Connect(function()
+assert(loadstring(TextBox.Text))()
+end)
+
+local clea = Instance.new("TextButton")
+clea.Size = UDim2.new(0.1, 22, 0.1, 0)
+clea.Position = UDim2.new(0.1, 31, 0.0, 266)
+clea.BackgroundColor3 = Color3.new(1, 1, 1)
+clea.BorderColor3 = Color3.new(0, 0, 0)
+clea.BorderSizePixel = 0
+clea.Text = "Clear"
+clea.BackgroundTransparency = 0.1
+clea.TextColor3 = Color3.new(0, 0, 0)
+clea.Font = Enum.Font.Montserrat
+clea.Parent = Image
+clea.TextSize = 21
+clea.MouseButton1Click:Connect(function()
+TextBox.Text = ""
+end)
+
+local Re = Instance.new("TextButton")
+Re.Size = UDim2.new(0.1, 22, 0.1, 0)
+Re.Position = UDim2.new(0.3, 8, 0.0, 266)
+Re.BackgroundColor3 = Color3.new(1, 1, 1)
+Re.BorderColor3 = Color3.new(0, 0, 0)
+Re.BorderSizePixel = 0
+Re.Text = "R6"
+Re.BackgroundTransparency = 0.1
+Re.TextColor3 = Color3.new(0, 0, 0)
+Re.Font = Enum.Font.Montserrat
+Re.Parent = Image
+Re.TextSize = 21
+Re.MouseButton1Click:Connect(function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Imagnir/r6_anims_for_r15/main/r6_anims.lua", true))()("Copyright ERROR_CODE ECCS Co")
+end)
+
+local R6 = Instance.new("TextButton")
+R6.Size = UDim2.new(0.1, 22, 0.1, 0)
+R6.Position = UDim2.new(0.4, 35, 0.0, 266)
+R6.BackgroundColor3 = Color3.new(1,1, 1)
+R6.BorderColor3 = Color3.new(0, 0, 0)
+R6.BorderSizePixel = 0
+R6.Text = "Re"
+R6.BackgroundTransparency = 0.1
+R6.TextColor3 = Color3.new(0, 0, 0)
+R6.Font = Enum.Font.Montserrat
+R6.Parent = Image
+R6.TextSize = 23
+R6.MouseButton1Click:Connect(function()
+if game.Players.LocalPlayer.Character then
+game.Players.LocalPlayer.Character.Humanoid.Health = 0
+end
+end)
+
+local Sf = Instance.new("ScrollingFrame")
+Sf.Size = UDim2.new(0.3, 7, 0.5, 39)
+Sf.Position = UDim2.new(0.0, 332, 0.0, 72)
+Sf.BackgroundColor3 = Color3.new(1, 1, 1)
+Sf.BorderColor3 = Color3.new(0, 0, 0)
+Sf.BorderSizePixel = 0
+Sf.Parent = Image
+Sf.ScrollBarThickness = 0
+
+Sf.BackgroundTransparency = 1
+
+local A = Instance.new("TextButton")
+A.Size = UDim2.new(0.9, 19, 0.0, 25)
+A.Position = UDim2.new(0.0, 0, 0.0, 0)
+A.BackgroundColor3 = Color3.new(1, 1, 1)
+A.BorderColor3 = Color3.new(0, 0, 0)
+A.BorderSizePixel = 0
+A.Text = "Chaotic God"
+A.BackgroundTransparency = 0.3
+A.TextColor3 = Color3.new(0, 0, 0)
+A.Font = Enum.Font.Montserrat
+A.Parent = Sf
+A.TextSize = 19
+A.MouseButton1Click:Connect(function()
+loadstring(game:HttpGet("https://pastebin.com/raw/ygMBF5G6"))();
+end)
+
+local a = Instance.new("TextButton")
+a.Size = UDim2.new(0.9, 19, 0.0, 25)
+a.Position = UDim2.new(0.0, 0, 0.0, 29)
+a.BackgroundColor3 = Color3.new(1, 1, 1)
+a.BorderColor3 = Color3.new(0, 0, 0)
+a.BorderSizePixel = 0
+a.Text = "Archangel"
+a.BackgroundTransparency = 0.3
+a.TextColor3 = Color3.new(0, 0, 0)
+a.Font = Enum.Font.Montserrat
+a.Parent = Sf
+a.TextSize = 19
+a.MouseButton1Click:Connect(function()
+loadstring(game:HttpGet("https://pastebin.com/raw/pUbrEfGS"))();
+end)
+
+local b = Instance.new("TextButton")
+b.Size = UDim2.new(0.9, 19, 0.0, 25)
+b.Position = UDim2.new(0.0, 0, 0.0, 58)
+b.BackgroundColor3 = Color3.new(1, 1, 1)
+b.BorderColor3 = Color3.new(0, 0, 0)
+b.BorderSizePixel = 0
+b.Text = "Nebula's Angel"
+b.BackgroundTransparency = 0.3
+b.TextColor3 = Color3.new(0, 0, 0)
+b.Font = Enum.Font.Montserrat
+b.Parent = Sf
+b.TextSize = 19
+b.MouseButton1Click:Connect(function()
+loadstring(game:HttpGet("https://pastebin.com/raw/ZbHjC5ne"))();
+end)
+
+local c = Instance.new("TextButton")
+c.Size = UDim2.new(0.9, 19, 0.0, 25)
+c.Position = UDim2.new(0.0, 0, 0.0, 88)
+c.BackgroundColor3 = Color3.new(1, 1, 1)
+c.BorderColor3 = Color3.new(0, 0, 0)
+c.BorderSizePixel = 0
+c.Text = "N.S Angel"
+c.BackgroundTransparency = 0.3
+c.TextColor3 = Color3.new(0, 0, 0)
+c.Font = Enum.Font.Montserrat
+c.Parent = Sf
+c.TextSize = 19
+c.MouseButton1Click:Connect(function()
+loadstring(game:HttpGet("https://pastebin.com/raw/j09BnGB3"))();
+end)
+
+local d = Instance.new("TextButton")
+d.Size = UDim2.new(0.9, 19, 0.0, 25)
+d.Position = UDim2.new(0.0, 0, 0.0, 118)
+d.BackgroundColor3 = Color3.new(1, 1, 1)
+d.BorderColor3 = Color3.new(0, 0, 0)
+d.BorderSizePixel = 0
+d.Text = "W.Y.D Form"
+d.BackgroundTransparency = 0.3
+d.TextColor3 = Color3.new(0, 0, 0)
+d.Font = Enum.Font.Montserrat
+d.Parent = Sf
+d.TextSize = 19
+d.MouseButton1Click:Connect(function()
+loadstring(game:HttpGet("https://pastebin.com/raw/X3Y7adwk"))();
+end)
+
+local e = Instance.new("TextButton")
+e.Size = UDim2.new(0.9, 19, 0.0, 25)
+e.Position = UDim2.new(0.0, 0, 0.0, 148)
+e.BackgroundColor3 = Color3.new(1, 1, 1)
+e.BorderColor3 = Color3.new(0, 0, 0)
+e.BorderSizePixel = 0
+e.Text = "Vereus"
+e.BackgroundTransparency = 0.3
+e.TextColor3 = Color3.new(0, 0, 0)
+e.Font = Enum.Font.Montserrat
+e.Parent = Sf
+e.TextSize = 19
+e.MouseButton1Click:Connect(function()
+loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Roblox-VEREUS-monster-script-3746"))()
+end)
+
+local f = Instance.new("TextButton")
+f.Size = UDim2.new(0.9, 19, 0.0, 25)
+f.Position = UDim2.new(0.0, 0, 0.0, 178)
+f.BackgroundColor3 = Color3.new(1, 1, 1)
+f.BorderColor3 = Color3.new(0, 0, 0)
+f.BorderSizePixel = 0
+f.Text = "G.R.C"
+f.BackgroundTransparency = 0.3
+f.TextColor3 = Color3.new(0, 0, 0) 
+f.Font = Enum.Font.Montserrat
+f.Parent = Sf
+f.TextSize = 19
+f.MouseButton1Click:Connect(function()
+loadstring(game:HttpGet("https://pastebin.com/raw/hwnwvdFy"))();
+end)
+
+local g = Instance.new("TextButton")
+g.Size = UDim2.new(0.9, 19, 0.0, 25)
+g.Position = UDim2.new(0.0, 0, 0.0, 208)
+g.BackgroundColor3 = Color3.new(1, 1, 1)
+g.BorderColor3 = Color3.new(0, 0, 0)
+g.BorderSizePixel = 0
+g.Text = "Scout"
+g.BackgroundTransparency = 0.3
+g.TextColor3 = Color3.new(0, 0, 0)
+g.Font = Enum.Font.Montserrat
+g.Parent = Sf
+g.TextSize = 19
+g.MouseButton1Click:Connect(function()
+loadstring(game:HttpGet("https://pastebin.com/raw/uUbCANas"))();
+end)
+
+local h = Instance.new("TextButton")
+h.Size = UDim2.new(0.9, 19, 0.0, 25)
+h.Position = UDim2.new(0.0, 0, 0.0, 238)
+h.BackgroundColor3 = Color3.new(1, 1, 1)
+h.BorderColor3 = Color3.new(0, 0, 0)
+h.BorderSizePixel = 0
+h.Text = "Guardian"
+h.BackgroundTransparency = 0.3
+h.TextColor3 = Color3.new(0, 0, 0)
+h.Font = Enum.Font.Montserrat
+h.Parent = Sf
+h.TextSize = 19
+h.MouseButton1Click:Connect(function()
+loadstring(game:HttpGet("https://pastebin.com/raw/txe4WxvD"))();
+end)
+
+local i = Instance.new("TextButton")
+i.Size = UDim2.new(0.9, 19, 0.0, 25)
+i.Position = UDim2.new(0.0, 0, 0.0, 268)
+i.BackgroundColor3 = Color3.new(1, 1, 1)
+i.BorderColor3 = Color3.new(0, 0, 0)
+i.BorderSizePixel = 0
+i.Text = "John Doe"
+i.BackgroundTransparency = 0.3
+i.TextColor3 = Color3.new(0, 0, 0)
+i.Font = Enum.Font.Montserrat
+i.Parent = Sf
+i.TextSize = 19
+i.MouseButton1Click:Connect(function()
+loadstring(game:HttpGet("https://rawscripts.net/raw/Client-Replication-John-doe-up-by-gojohdkaisenkt-34198"))()
+end)
+
+local j = Instance.new("TextButton") 
+j.Size = UDim2.new(0.9, 19, 0.0, 25)
+j.Position = UDim2.new(0.0, 0, 0.0, 298)
+j.BackgroundColor3 = Color3.new(1, 1, 1)
+j.BorderColor3 = Color3.new(0, 0, 0)
+j.BorderSizePixel = 0
+j.Text = "Steve"
+j.BackgroundTransparency = 0.3
+j.TextColor3 = Color3.new(0, 0, 0)
+j.Font = Enum.Font.Montserrat
+j.Parent = Sf
+j.TextSize = 19
+j.MouseButton1Click:Connect(function()
+loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Steve-script-24707"))()
+end)
+
+local k = Instance.new("TextButton")
+k.Size = UDim2.new(0.9, 19, 0.0, 25)
+k.Position = UDim2.new(0.0, 0, 0.0, 328)
+k.BackgroundColor3 = Color3.new(1, 1, 1)
+k.BorderColor3 = Color3.new(0, 0, 0)
+k.BorderSizePixel = 0
+k.Text = "MLG 2520 Gun"
+k.BackgroundTransparency = 0.3
+k.TextColor3 = Color3.new(0, 0, 0)
+k.Font = Enum.Font.Montserrat
+k.Parent = Sf
+k.TextSize = 19
+k.MouseButton1Click:Connect(function()
+loadstring(game:HttpGet("https://rawscripts.net/raw/Client-Replication-the-ss-loadstring-script-27393"))()
+end)
+
+local l = Instance.new("TextButton") 
+l.Size = UDim2.new(0.9, 19, 0.0, 25)
+l.Position = UDim2.new(0.0, 0, 0.0, 358)
+l.BackgroundColor3 = Color3.new(1, 1, 1)
+l.BorderColor3 = Color3.new(0, 0, 0)
+l.BorderSizePixel = 0
+l.Text = "Yin-Yan Sword"
+l.BackgroundTransparency = 0.3
+l.TextColor3 = Color3.new(0, 0, 0)
+l.Font = Enum.Font.Montserrat
+l.Parent = Sf
+l.TextSize = 19
+l.MouseButton1Click:Connect(function()
+loadstring(game:HttpGet("https://pastebin.com/raw/0k2JRLsS"))();
+end)
+
+local m = Instance.new("TextButton") 
+m.Size = UDim2.new(0.9, 19, 0.0, 25)
+m.Position = UDim2.new(0.0, 0, 0.0, 388)
+m.BackgroundColor3 = Color3.new(1, 1, 1)
+m.BorderColor3 = Color3.new(0, 0, 0)
+m.BorderSizePixel = 0
+m.Text = "Shrike"
+m.BackgroundTransparency = 0.3
+m.TextColor3 = Color3.new(0, 0, 0)
+m.Font = Enum.Font.Montserrat
+m.Parent = Sf
+m.TextSize = 19
+m.MouseButton1Click:Connect(function()
+loadstring(game:HttpGet("https://rawscripts.net/raw/Client-Replication-Grab-Knife-V4-27394"))()
+end)
+
+local n = Instance.new("TextButton") 
+n.Size = UDim2.new(0.9, 19, 0.0, 25)
+n.Position = UDim2.new(0.0, 0, 0.0, 418)
+n.BackgroundColor3 = Color3.new(1, 1, 1)
+n.BorderColor3 = Color3.new(0, 0, 0)
+n.BorderSizePixel = 0
+n.Text = "Portal Gun"
+n.BackgroundTransparency = 0.3
+n.TextColor3 = Color3.new(0, 0, 0)
+n.Font = Enum.Font.Montserrat
+n.Parent = Sf
+n.TextSize = 19
+n.MouseButton1Click:Connect(function()
+loadstring(game:HttpGet("https://pastebin.com/raw/JiW0yu1d"))();
+end)
+
+local o = Instance.new("TextButton") 
+o.Size = UDim2.new(0.9, 19, 0.0, 25)
+o.Position = UDim2.new(0.0, 0, 0.0, 448)
+o.BackgroundColor3 = Color3.new(1, 1, 1)
+o.BorderColor3 = Color3.new(0, 0, 0)
+o.BorderSizePixel = 0
+o.Text = "Kitchen Gun"
+o.BackgroundTransparency = 0.3
+o.TextColor3 = Color3.new(0, 0, 0)
+o.Font = Enum.Font.Montserrat
+o.Parent = Sf
+o.TextSize = 19
+o.MouseButton1Click:Connect(function()
+loadstring(game:HttpGet("https://pastebin.com/raw/WgLRuxrw"))();
+end)
+
+local p = Instance.new("TextButton") 
+p.Size = UDim2.new(0.9, 19, 0.0, 25)
+p.Position = UDim2.new(0.0, 0, 0.0, 478)
+p.BackgroundColor3 = Color3.new(1, 1, 1)
+p.BorderColor3 = Color3.new(0, 0, 0)
+p.BorderSizePixel = 0
+p.Text = "Nebula Staff"
+p.BackgroundTransparency = 0.3
+p.TextColor3 = Color3.new(0, 0, 0)
+p.Font = Enum.Font.Montserrat
+p.Parent = Sf
+p.TextSize = 19
+p.MouseButton1Click:Connect(function()
+loadstring(game:HttpGet("https://pastebin.com/raw/CZZJqf0s"))()
+end)
+
+local q = Instance.new("TextButton") 
+q.Size = UDim2.new(0.9, 19, 0.0, 25)
+q.Position = UDim2.new(0.0, 0, 0.0, 508)
+q.BackgroundColor3 = Color3.new(1, 1, 1)
+q.BorderColor3 = Color3.new(0, 0, 0)
+q.BorderSizePixel = 0
+q.Text = "Sin-Unleashed"
+q.BackgroundTransparency = 0.3
+q.TextColor3 = Color3.new(0, 0, 0)
+q.Font = Enum.Font.Montserrat
+q.Parent = Sf
+q.TextSize = 19
+q.MouseButton1Click:Connect(function()
+loadstring(game:HttpGet("https://pastebin.com/raw/ZaGXVyhj"))();
+end)
+
+local r = Instance.new("TextButton") 
+r.Size = UDim2.new(0.9, 19, 0.0, 25)
+r.Position = UDim2.new(0.0, 0, 0.0, 538)
+r.BackgroundColor3 = Color3.new(1, 1, 1)
+r.BorderColor3 = Color3.new(0, 0, 0)
+r.BorderSizePixel = 0
+r.Text = "Spark"
+r.BackgroundTransparency = 0.3
+r.TextColor3 = Color3.new(0, 0, 0)
+r.Font = Enum.Font.Montserrat
+r.Parent = Sf
+r.TextSize = 19
+r.MouseButton1Click:Connect(function()
+loadstring(game:HttpGet("https://pastebin.com/raw/t33JKSrk"))();
+end)
+
+local s = Instance.new("TextButton")
+s.Size = UDim2.new(0.9, 19, 0.0, 25)
+s.Position = UDim2.new(0.0, 0, 0.0, 568)
+s.BackgroundColor3 = Color3.new(1, 1, 1)
+s.BorderColor3 = Color3.new(0, 0, 0)
+s.BorderSizePixel = 0
+s.Text = "Jelly Fish Cane"
+s.BackgroundTransparency = 0.3
+s.TextColor3 = Color3.new(0, 0, 0)
+s.Font = Enum.Font.Montserrat
+s.Parent = Sf
+s.TextSize = 19
+s.MouseButton1Click:Connect(function()
+loadstring(game:HttpGet("https://pastebin.com/raw/17XuBQfB"))();
+end)
+
+local y = Instance.new("TextButton")
+y.Size = UDim2.new(0.9, 19, 0.0, 25)
+y.Position = UDim2.new(0.0, 0, 0.0, 598)
+y.BackgroundColor3 = Color3.new(1, 1, 1)
+y.BorderColor3 = Color3.new(0, 0, 0)
+y.BorderSizePixel = 0
+y.Text = "mario.exe"
+y.BackgroundTransparency = 0.3
+y.TextColor3 = Color3.new(0, 0, 0)
+y.Font = Enum.Font.Montserrat
+y.Parent = Sf
+y.TextSize = 19
+y.MouseButton1Click:Connect(function()
+loadstring(game:HttpGet("https://pastebin.com/raw/fCFjSWkw"))()("Copyright ERROR_CODE ECCS Co")
+end)
+
+local sec = Instance.new("TextBox")
+sec.Size = UDim2.new(0.3, 7, 0.0, 25)
+sec.Position = UDim2.new(0.0, 332, 0.0, 45)
+sec.BackgroundColor3 = Color3.new(1, 1, 1)
+sec.BorderColor3 = Color3.new(0, 0, 0)
+sec.BorderSizePixel = 0
+sec.Text = ""
+sec.TextColor3 = Color3.new(0, 0, 0)
+sec.BackgroundTransparency = 0.3
+sec.Font = Enum.Font.Montserrat
+sec.TextSize = 15
+sec.Parent = Image
+sec.PlaceholderText = "Search"
+sec.PlaceholderColor3 = Color3.fromRGB(0, 0, 0)
+sec.TextSize = 21
+
+local uic = Instance.new("UICorner")
+uic.CornerRadius = UDim.new(0, 5)
+uic.Parent = sec
+
+local com = Instance.new("TextBox")
+com.Size = UDim2.new(0.3, 29, 0.1, 0)
+com.Position = UDim2.new(0.5, 64, 0.0, 266)
+com.BackgroundColor3 = Color3.new(1, 1, 1)
+com.BorderColor3 = Color3.new(0, 0, 0)
+com.BorderSizePixel = 0
+com.Text = ""
+com.TextColor3 = Color3.new(0, 0, 0)
+com.BackgroundTransparency = 0.3
+com.Font = Enum.Font.Code
+com.TextSize = 15
+com.Parent = Image
+com.PlaceholderText = "Command Bar"
+com.PlaceholderColor3 = Color3.fromRGB(0, 0, 0)
+com.TextSize = 21
+
+local uic = Instance.new("UICorner")
+uic.CornerRadius = UDim.new(0, 5)
+uic.Parent = com
+
+local lel = Instance.new("ImageLabel")
+lel.Size = UDim2.new(0.0, 50, 0.0, 50)
+lel.Position = UDim2.new(-0.127000004, 0, 0.407999992, 0)
+lel.BackgroundColor3 = Color3.new(0, 0, 0)
+lel.ImageColor3 = Color3.new(1, 1, 1)
+lel.Image = "rbxassetid://72281661539872"
+lel.ImageTransparency = 0
+lel.Parent = Image
+
+lel.BackgroundTransparency = 1 
+
+local Ring = Instance.new("ImageLabel")
+Ring.Size = UDim2.new(1.0, 0, 1.0, 0)
+Ring.Position = UDim2.new(0.0, 0, 0.0, 0)
+Ring.BackgroundColor3 = Color3.new(0, 0, 0)
+Ring.ImageColor3 = Color3.new(0, 0, 0)
+Ring.Image = "rbxassetid://7102118272"
+Ring.ImageTransparency = 0
+Ring.Parent = lel
+
+Ring.BackgroundTransparency = 1
+
+lel:TweenPosition(UDim2.new(0.458, 0, 0.408, 0), "Out", "Linear", 0.4, false)
+wait(3)
+lel:TweenPosition(UDim2.new(0.0, 0, 0.0, 0), "Out", "Sine", 0.7, false)
+
+while wait() do
+Ring.Rotation = Ring.Rotation + 1
+end
