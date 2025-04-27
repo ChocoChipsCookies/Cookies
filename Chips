@@ -1752,6 +1752,58 @@ local Section = Tab:AddSection({
 })
 
 Tab:AddButton({
+    Name = "N00T-N00T (⚠️ LAG WARNING ⚠️)",
+    Callback = function()
+        loadstring(game:HttpGet("https://scriptblox.com/raw/Universal-Script-NOOT-NOOT-9643"))()
+        OrionLib:MakeNotification({
+            Name = "Projects Cookies 🍪 || Creator Message🌐",
+            Content = "Successfully executed!",
+            Image = "rbxassetid://7733993369",
+            Time = 3
+        })
+    end    
+})
+
+Tab:AddButton({
+    Name = "Toad Roast",
+    Callback = function()
+        loadstring(game:HttpGet("https://rawscripts.net/raw/TOAD-roast-Script-21462"))()
+        OrionLib:MakeNotification({
+            Name = "Projects Cookies 🍪 || Creator Message🌐",
+            Content = "Successfully executed!",
+            Image = "rbxassetid://7733993369",
+            Time = 3
+        })
+    end    
+})
+
+Tab:AddButton({
+    Name = "Nachos Roast",
+    Callback = function()
+        loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Nachos-roast-By-Yaazkidd-35927"))()
+        OrionLib:MakeNotification({
+            Name = "Projects Cookies 🍪 || Creator Message🌐",
+            Content = "Successfully executed!",
+            Image = "rbxassetid://7733993369",
+            Time = 3
+        })
+    end    
+})
+
+Tab:AddButton({
+    Name = "Hotdog Roast",
+    Callback = function()
+        loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Hotdog-roast-31598"))()
+        OrionLib:MakeNotification({
+            Name = "Projects Cookies 🍪 || Creator Message🌐",
+            Content = "Successfully executed!",
+            Image = "rbxassetid://7733993369",
+            Time = 3
+        })
+    end    
+})
+
+Tab:AddButton({
     Name = "MLG Particles",
     Callback = function()
         loadstring(game:HttpGet("https://pastebin.com/raw/EECY2a6r"))();
@@ -1768,19 +1820,6 @@ Tab:AddButton({
     Name = "Obunga Jumpscare",
     Callback = function()
         loadstring(game:HttpGet(('https://pastebin.com/raw/nLJkW0s1')))()
-        OrionLib:MakeNotification({
-            Name = "Projects Cookies 🍪 || Creator Message🌐",
-            Content = "Successfully executed!",
-            Image = "rbxassetid://7733993369",
-            Time = 3
-        })
-    end    
-})
-
-Tab:AddButton({
-    Name = "N00T-N00T (⚠️ LAG WARNING ⚠️)",
-    Callback = function()
-        loadstring(game:HttpGet("https://scriptblox.com/raw/Universal-Script-NOOT-NOOT-9643"))()
         OrionLib:MakeNotification({
             Name = "Projects Cookies 🍪 || Creator Message🌐",
             Content = "Successfully executed!",
@@ -2260,7 +2299,7 @@ local Tab = Window:MakeTab({
 })
 
 local Section = Tab:AddSection({
-    Name = "Tools/Gears (New)"
+    Name = "[Tools/Gears] (New)"
 })
 
 Tab:AddParagraph("-- > Tools/Gears <--","So Epic LOL")
@@ -2351,6 +2390,19 @@ Tab:AddButton({
     Name = "Rc⁷ Cloud",
     Callback = function()
         loadstring(game:HttpGet("https://pastebin.com/raw/h18G7UsU"))();
+        OrionLib:MakeNotification({
+            Name = "Projects Cookies 🍪 || Creator Message🌐",
+            Content = "Successfully executed!",
+            Image = "rbxassetid://7733993369",
+            Time = 3
+        })
+    end    
+})
+
+Tab:AddButton({
+    Name = "Soviet-Union Symbol",
+    Callback = function()
+        loadstring(game:HttpGet("https://rawscripts.net/raw/Client-Replication-Soviet-Union-Symbol-Morph-36139"))()
         OrionLib:MakeNotification({
             Name = "Projects Cookies 🍪 || Creator Message🌐",
             Content = "Successfully executed!",
@@ -2727,7 +2779,7 @@ Tab:AddButton({
 })
 
 local Section = Tab:AddSection({
-    Name = "Extra Tools"
+    Name = "[Extra Tools]"
 })
 
 Tab:AddButton({
@@ -2874,7 +2926,7 @@ Tab:AddButton({
 })
 
 local Section = Tab:AddSection({
-    Name = "Gui Tools"
+    Name = "[Gui Tools]"
 })
 
 Tab:AddButton({
@@ -2903,7 +2955,7 @@ Tab:AddButton({
     end    
 })
 local Section = Tab:AddSection({
-    Name = "Coil Gears"
+    Name = "[Coil Gears]"
 })
 
 Tab:AddButton({
@@ -3020,7 +3072,7 @@ local Tab = Window:MakeTab({
 })
 
 local Section = Tab:AddSection({
-    Name = "SS Script (New)"
+    Name = "[SS Script] (New)"
 })
 
 Tab:AddParagraph("-- > SS Script <--","This is real Server Side Script, So you need Server Side Games to make it Working")
@@ -3030,7 +3082,7 @@ Tab:AddParagraph("Correct SS Script Working : 92 🟢","Correct SS Script Not Wo
 Tab:AddLabel("Credits To Owner of SS Script")
 
 local Section = Tab:AddSection({
-    Name = "Popular in 2014 - 2018"
+    Name = "[Popular in 2014 - 2018]"
 })
 
 Tab:AddButton({
@@ -3307,7 +3359,7 @@ Tab:AddButton({
 })
 
 local Section = Tab:AddSection({
-    Name = "Recommended"
+    Name = "[Recommended]"
 })
 
 Tab:AddButton({
@@ -3583,7 +3635,7 @@ Tab:AddButton({
     end    
 })
 local Section = Tab:AddSection({
-    Name = "Normal SS"
+    Name = "[Normal SS]"
 })
 
 Tab:AddButton({
@@ -4428,7 +4480,7 @@ local Tab = Window:MakeTab({
 })
 
 local Section = Tab:AddSection({
-    Name = "Executor"
+    Name = "[Executor]"
 })
 
 Tab:AddParagraph("-- > Executor <--","Not Fe Bypasser")
@@ -4645,7 +4697,7 @@ Tab:AddButton({
 })
 
 local Section = Tab:AddSection({
-    Name = "Internal"
+    Name = "[Internal]"
 })
 
 Tab:AddButton({
@@ -4674,7 +4726,7 @@ Tab:AddButton({
     end    
 })
 local Section = Tab:AddSection({
-    Name = "Executor (PC Only)"
+    Name = "[Executor] (PC Only)"
 })
 
 Tab:AddButton({
@@ -4912,7 +4964,7 @@ Tab:AddButton({
     end    
 })
 local Section = Tab:AddSection({
-    Name = "SS Executor"
+    Name = "[SS Executor]"
 })
 
 Tab:AddParagraph("-- > SS Executor <--","Only Work On Backdoor Games")
@@ -4921,7 +4973,7 @@ Tab:AddLabel("Status : 🟢")
 Tab:AddParagraph("Correct SS Executor Working : 12 🟢","Correct SS Executor Not Working : 0 🔴")
 
 Tab:AddButton({
-    Name = "LALOL Hub (backdoor scanner and executor)",
+    Name = "LALOL Hub (Backdoor Scanner and Executor)",
     Callback = function()
         loadstring(game:HttpGet('https://raw.githubusercontent.com/Its-LALOL/LALOL-Hub/main/Backdoor-Scanner/script'))()
         OrionLib:MakeNotification({
@@ -4934,7 +4986,7 @@ Tab:AddButton({
 })
 
 Tab:AddButton({
-    Name = "Frakture SS (backdoor scanner and executor)",
+    Name = "Frakture SS (Backdoor Scanner and Executor)",
     Callback = function()
         loadstring(game:HttpGet('https://pastefy.app/edMe7Bwx/raw'))()
         OrionLib:MakeNotification({
@@ -4947,7 +4999,7 @@ Tab:AddButton({
 })
 
 Tab:AddButton({
-    Name = "Micro SS (backdoor scanner and executor)",
+    Name = "Micro SS (Backdoor Scanner and Executor)",
     Callback = function()
         loadstring(game:HttpGet("https://paste.ee/r/1FC2N"))()
         OrionLib:MakeNotification({
@@ -4960,7 +5012,7 @@ Tab:AddButton({
 })
 
 Tab:AddButton({
-    Name = "Harware SS (backdoor scanner and executor)",
+    Name = "Soul SS (Backdoor Scanner and Executor)",
     Callback = function()
         loadstring(game:HttpGet("https://pastebin.com/raw/adceDwMv"))()
         OrionLib:MakeNotification({
@@ -4973,7 +5025,20 @@ Tab:AddButton({
 })
 
 Tab:AddButton({
-    Name = "Krampus SS (Only Work, on Backdoor games!)",
+    Name = "Starlight SS (Backdoor Scanner and Executor)",
+    Callback = function()
+        loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Starlight-ServerSide-35958"))()
+        OrionLib:MakeNotification({
+            Name = "Projects Cookies 🍪 || Creator Message🌐",
+            Content = "Successfully executed!",
+            Image = "rbxassetid://7733993369",
+            Time = 3
+        })
+    end    
+})
+
+Tab:AddButton({
+    Name = "Krampus SS (Only Work, on Backdoor Games!)",
     Callback = function()
         loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Krampus-Serverside-13376"))()
         OrionLib:MakeNotification({
@@ -5098,7 +5163,7 @@ local Tab = Window:MakeTab({
 })
 
 local Section = Tab:AddSection({
-    Name = "Inject Something (LOL)"
+    Name = "[Inject Something] (LOL)"
 })
 
 Tab:AddParagraph("-- > Inject Logo <--","Epic")
@@ -5192,7 +5257,7 @@ local Tab = Window:MakeTab({
 })
 
 local Section = Tab:AddSection({
-    Name = "Creator/Developer"
+    Name = "[Creator/Developer]"
 })
 
 Tab:AddButton({
@@ -5209,7 +5274,7 @@ Tab:AddButton({
 })
 
 local Section = Tab:AddSection({
-    Name = "Special Thanks!"
+    Name = "[Special Thanks!]"
 })
 
 Tab:AddButton({
@@ -5217,7 +5282,7 @@ Tab:AddButton({
     Callback = function()
         setclipboard("❤️Thanks for using our Script❤️!")
         OrionLib:MakeNotification({
-            Name = "Projects Cookies 🍪 || Creator Message🌐",
+            Name = "Projects Cookies 🍪 || TC Message🌐",
             Content = "❤️Thanks for using our Script❤️!",
             Image = "rbxassetid://13948965891",
             Time = 15
@@ -5226,7 +5291,7 @@ Tab:AddButton({
 })
 
 local Section = Tab:AddSection({
-    Name = "The One Who Make Me Smile Every Time :)"
+    Name = "[The One Who Make Me Smile Every Time :)]"
 })
 
 Tab:AddButton({
