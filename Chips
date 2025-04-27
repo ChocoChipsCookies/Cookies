@@ -33,7 +33,7 @@ wait(1)
 -- Orion Library --
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/DenDenZZZ/Orion-UI-Library/refs/heads/main/source')))()
 
--- Make Main Tab --
+-- Main Tab --
 local Window = OrionLib:MakeWindow({
     Name = "Projects Cookies 🍪 || Private Version [Gen 2] 🌐",
     HidePremium = false,
@@ -43,7 +43,6 @@ local Window = OrionLib:MakeWindow({
     IntroText = "Projects Cookies 🍪 || Private Version [Gen 2] 🌐",
     IntroIcon = "rbxassetid://13948965891"
 })
-
 
 OrionLib:MakeNotification({
 	Name = "Private Cookies 🍪 || Creator Message🌐",
@@ -59,19 +58,19 @@ OrionLib:MakeNotification({
 	Time = 7
 })
 
--- Home --
+Tab:AddParagraph("Hello, " .. game.Players.LocalPlayer.Name.. " !,","Wellcome to Private Version of Projects Cookies 🍪🌐!")
+
+-- Create a Tab for the Clock
 local Tab = Window:MakeTab({
-    Name = "Home",
-    Icon = "rbxassetid://140587862516598",
+    Name = "Clock",
+    Icon = "rbxassetid://4483345998",
     PremiumOnly = false
 })
 
-local Section = Tab:AddSection({
-    Name = "[Info]"
-})
+-- Create a Section for the Clock
+local ClockSection = Tab:AddSection({Name = "Current Date and Time"})
 
-Tab:AddParagraph("Hello, " .. game.Players.LocalPlayer.Name.. " !,","Wellcome to Private Version of Projects Cookies 🍪🌐!")
-
+-- Add a label for displaying the clock
 local ClockLabel = ClockSection:AddLabel("Time: Loading...")
 
 -- Function to format the real time
@@ -122,6 +121,7 @@ end
 
 -- Start updating the clock
 spawn(UpdateClock)
+
 
 Tab:AddLabel("--> [Game Information] <--")
 Tab:AddParagraph("Correct Game :  " ..game.MarketplaceService:GetProductInfo(game.PlaceId).Name.. " ","Correct Map :  " ..game.MarketplaceService:GetProductInfo(game.PlaceId).Name.. " ")
