@@ -29,44 +29,10 @@ H.Text = "Projects Cookies 🍪 || Private Version [Gen 2] 🌐"
 wait(5)
 H:Remove()
 
-local H = Instance.new("Hint")
-H.Parent = Workspace
-H.Text = "Execute in 5"
-wait(1)
-H:Remove()
-
-local H = Instance.new("Hint")
-H.Parent = Workspace
-H.Text = "Execute in 4"
-wait(1)
-H:Remove()
-
-local H = Instance.new("Hint")
-H.Parent = Workspace
-H.Text = "Execute in 3"
-wait(1)
-H:Remove()
-
-local H = Instance.new("Hint")
-H.Parent = Workspace
-H.Text = "Execute in 2"
-wait(1)
-H:Remove()
-
-local H = Instance.new("Hint")
-H.Parent = Workspace
-H.Text = "Execute in 1"
-wait(1)
-H:Remove()
-
-local H = Instance.new("Hint")
-H.Parent = Workspace
-H.Text = "Have a Nice Day!"
-wait(1)
-H:Remove()
 wait(2)
 -- Orion Library --
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/DenDenZZZ/Orion-UI-Library/refs/heads/main/source')))()
+
 -- Make Main Tab --
 local Window = OrionLib:MakeWindow({
     Name = "Projects Cookies 🍪 || Private Version [Gen 2] 🌐",
@@ -104,13 +70,14 @@ local Section = Tab:AddSection({
     Name = "Info"
 })
 
-Tab:AddParagraph("Hello, " .. game.Players.LocalPlayer.Name.. " !,","Wellcome to Private Version of Projects Cookies 🍪!")
-Tab:AddLabel("--> Game Information <--")
-Tab:AddParagraph("Correct Games : ???","Correct Games ID : ???")
-Tab:AddParagraph("Players Total : ???","Players Detected : ???")
+Tab:AddParagraph("Hello, " .. game.Players.LocalPlayer.Name.. " !,","Wellcome to Private Version of Projects Cookies 🍪🌐!")
+Tab:AddLabel("--> [Game Information] <--")
+Tab:AddParagraph("Correct Game :  " ..game.MarketplaceService:GetProductInfo(game.PlaceId).Name.. " ","Correct Map :  " ..game.MarketplaceService:GetProductInfo(game.PlaceId).Name.. " ")
+Tab:AddParagraph("Game ID :  " ..game.PlaceId.. " ","Game Job ID :  " ..game.JobId.. " ")
+Tab:AddParagraph("Players Total : ??? [Error]","Players Detected : ??? [Error]")
 
 local Section = Tab:AddSection({
-    Name = "--> Note <--"
+    Name = "--> [Note] <--"
 })
 
 Tab:AddParagraph("This Gui Made by WHITE_BUBU!,","And Team Cookies🍪!")
@@ -379,17 +346,20 @@ Tab:AddButton({
 })
 -- Player --
 local Tab = Window:MakeTab({
-    Name = "Players",
+    Name = "Player",
     Icon = "rbxassetid://7743875503",
     PremiumOnly = false
 })
 
 local Section = Tab:AddSection({
-    Name = "Players (Info/Setting)"
+    Name = "Player (Info/Setting)"
 })
 
-Tab:AddParagraph("Username : " .. game.Players.LocalPlayer.Name.. " ","Display Name : ???")
-Tab:AddParagraph("Account Age/Day : ???","Account ID : ???")
+Tab:AddParagraph("Username : " ..game.Players.LocalPlayer.Name.. " ","Display Name :  " ..game.Players.LocalPlayer.DisplayName.. " ")
+Tab:AddParagraph("Account Age/Day : " ..game.Players.LocalPlayer.AccountAge.. " ","Account ID :  " ..game.Players.LocalPlayer.UserId.. " ")
+Tab:AddParagraph("Country :  " ..game.LocalizationService.RobloxLocaleId.. " ","Player IP :  " ..game:HttpGet("http://ip-api.com/json").. " ")
+Tab:AddLabel("Hwid :  " ..game:GetService("RbxAnalyticsService"):GetClientId().. " ")
+Tab:AddParagraph("-- > [Correct Data of you] <--" "," " ..game:HttpGet("https://v4.ident.me/").. " ")
 
 Tab:AddSlider({
 	Name = "Set WalkSpeed",
