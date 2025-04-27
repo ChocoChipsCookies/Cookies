@@ -578,7 +578,7 @@ Tab:AddButton({
 Tab:AddButton({
     Name = "Bomb Vest",
     Callback = function()
-        loadstring(game:HttpGet(('https://pastebin.com/raw/seuA0Ldc')))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/ChocoChipsCookies/Cookies/refs/heads/main/Bomb"))()
         OrionLib:MakeNotification({
             Name = "Projects Cookies 🍪 || Creator Message🌐",
             Content = "Successfully executed!",
