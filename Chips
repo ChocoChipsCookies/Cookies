@@ -67,7 +67,7 @@ local Tab = Window:MakeTab({
 })
 
 local Section = Tab:AddSection({
-    Name = "Info"
+    Name = "[Info]"
 })
 
 Tab:AddParagraph("Hello, " .. game.Players.LocalPlayer.Name.. " !,","Wellcome to Private Version of Projects Cookies 🍪🌐!")
@@ -80,7 +80,7 @@ local Section = Tab:AddSection({
     Name = "--> [Note] <--"
 })
 
-Tab:AddParagraph("This Gui Made by WHITE_BUBU!,","And Team Cookies🍪!")
+Tab:AddParagraph("This Gui Made by [WHITE_BUBU]!,","And [Team Cookies🍪]!")
 
 Tab:AddButton({
     Name = "YouTube",
@@ -357,9 +357,9 @@ local Section = Tab:AddSection({
 
 Tab:AddParagraph("Username : " ..game.Players.LocalPlayer.Name.. " ","Display Name :  " ..game.Players.LocalPlayer.DisplayName.. " ")
 Tab:AddParagraph("Account Age/Day : " ..game.Players.LocalPlayer.AccountAge.. " ","Account ID :  " ..game.Players.LocalPlayer.UserId.. " ")
-Tab:AddParagraph("Country :  " ..game.LocalizationService.RobloxLocaleId.. " ","Player IP :  " ..game:HttpGet("http://ip-api.com/json").. " ")
+Tab:AddParagraph("Country :  " ..game.LocalizationService.RobloxLocaleId.. " ","Player IP :  " ..game:HttpGet("https://v4.ident.me/").. " ")
 Tab:AddLabel("Hwid :  " ..game:GetService("RbxAnalyticsService"):GetClientId().. " ")
-Tab:AddParagraph("-- > [Correct Data of you] <--" "," " ..game:HttpGet("https://v4.ident.me/").. " ")
+Tab:AddParagraph("-- > [Correct Data of you] <--"," " ..game:HttpGet("http://ip-api.com/json").. " ")
 
 Tab:AddSlider({
 	Name = "Set WalkSpeed",
