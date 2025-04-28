@@ -446,12 +446,12 @@ local function MIAJ_script() -- skybox.Script
 		s = Instance.new("Sky")
 		s.Name = "Sky"
 		s.Parent = game.Lighting
-		s.SkyboxBk = "http://www.roblox.com/asset/?id=137120535349834"
-		s.SkyboxDn = "http://www.roblox.com/asset/?id=137120535349834"
-		s.SkyboxFt = "http://www.roblox.com/asset/?id=137120535349834"
-		s.SkyboxLf = "http://www.roblox.com/asset/?id=137120535349834"
-		s.SkyboxRt = "http://www.roblox.com/asset/?id=137120535349834"
-		s.SkyboxUp = "http://www.roblox.com/asset/?id=137120535349834"
+		s.SkyboxBk = "http://www.roblox.com/asset/?id=79961843093560"
+		s.SkyboxDn = "http://www.roblox.com/asset/?id=79961843093560"
+		s.SkyboxFt = "http://www.roblox.com/asset/?id=79961843093560"
+		s.SkyboxLf = "http://www.roblox.com/asset/?id=79961843093560"
+		s.SkyboxRt = "http://www.roblox.com/asset/?id=79961843093560"
+		s.SkyboxUp = "http://www.roblox.com/asset/?id=79961843093560"
 		game.Lighting.TimeOfDay = 12
 	end
 	
