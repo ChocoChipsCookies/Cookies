@@ -46,7 +46,7 @@ TextLabel.BorderSizePixel = 3
 TextLabel.Position = UDim2.new(-0.000779274851, 0, 0, 0)
 TextLabel.Size = UDim2.new(0, 263, 0, 50)
 TextLabel.Font = Enum.Font.SourceSans
-TextLabel.Text = "k00pgui v3"
+TextLabel.Text = "WH1T3_BUBU v2"
 TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel.TextSize = 43.000
 TextLabel.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
@@ -446,12 +446,12 @@ local function MIAJ_script() -- skybox.Script
 		s = Instance.new("Sky")
 		s.Name = "Sky"
 		s.Parent = game.Lighting
-		s.SkyboxBk = "http://www.roblox.com/asset/?id=9422866248"
-		s.SkyboxDn = "http://www.roblox.com/asset/?id=9422866248"
-		s.SkyboxFt = "http://www.roblox.com/asset/?id=9422866248"
-		s.SkyboxLf = "http://www.roblox.com/asset/?id=9422866248"
-		s.SkyboxRt = "http://www.roblox.com/asset/?id=9422866248"
-		s.SkyboxUp = "http://www.roblox.com/asset/?id=9422866248"
+		s.SkyboxBk = "http://www.roblox.com/asset/?id=137120535349834"
+		s.SkyboxDn = "http://www.roblox.com/asset/?id=137120535349834"
+		s.SkyboxFt = "http://www.roblox.com/asset/?id=137120535349834"
+		s.SkyboxLf = "http://www.roblox.com/asset/?id=137120535349834"
+		s.SkyboxRt = "http://www.roblox.com/asset/?id=137120535349834"
+		s.SkyboxUp = "http://www.roblox.com/asset/?id=137120535349834"
 		game.Lighting.TimeOfDay = 12
 	end
 	
