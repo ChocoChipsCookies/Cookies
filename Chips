@@ -2633,10 +2633,50 @@ Tab:AddButton({
         })
     end    
 })
+
 Tab:AddButton({
     Name = "F3X",
     Callback = function()
         loadstring(game:GetObjects("rbxassetid://6695644299")[1].Source)()
+        OrionLib:MakeNotification({
+            Name = "Projects Cookies 🍪 || Creator Message🌐",
+            Content = "Successfully executed!",
+            Image = "rbxassetid://7733993369",
+            Time = 3
+        })
+    end    
+})
+
+Tab:AddButton({
+    Name = "Portal Gun",
+    Callback = function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/randomguy194/dollar-tree-portal-gun/main/portal%20gun%20ported'))()
+        OrionLib:MakeNotification({
+            Name = "Projects Cookies 🍪 || Creator Message🌐",
+            Content = "Successfully executed!",
+            Image = "rbxassetid://7733993369",
+            Time = 3
+        })
+    end    
+})
+
+Tab:AddButton({
+    Name = "Grab Knife v2",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/ChocoChipsCookies/Cookies/refs/heads/main/Grab%20Knife%20v2"))()
+        OrionLib:MakeNotification({
+            Name = "Projects Cookies 🍪 || Creator Message🌐",
+            Content = "Successfully executed!",
+            Image = "rbxassetid://7733993369",
+            Time = 3
+        })
+    end    
+})
+
+Tab:AddButton({
+    Name = "Dev-Uzi",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/ChocoChipsCookies/Cookies/refs/heads/main/Dev-Uzi"))()
         OrionLib:MakeNotification({
             Name = "Projects Cookies 🍪 || Creator Message🌐",
             Content = "Successfully executed!",
