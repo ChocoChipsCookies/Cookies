@@ -1,4 +1,5 @@
 -- Load Data --
+game.StarterGui:SetCore("DevConsoleVisible", true)
 print("Load Gui...")
 wait(3)
 print("Load Script...")
@@ -22,6 +23,7 @@ print("---------------------------------------")
 print("[The One Who Make Me Smile Everytime🙂]")
 print("------------->Fuvv4_w1nnn<------------")
 wait(2)
+game.StarterGui:SetCore("DevConsoleVisible", false)
 
 local H = Instance.new("Hint")
 H.Parent = Workspace
@@ -29,7 +31,7 @@ H.Text = "Projects Cookies 🍪 || Private Version [Gen 2] 🌐"
 wait(5)
 H:Remove()
 
-wait(1)
+wait(0.1)
 -- Orion Library --
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/DenDenZZZ/Orion-UI-Library/refs/heads/main/source')))()
 
