@@ -1,0 +1,19 @@
+local WindUI = loadstring(game:HttpGet("https://tree-hub.vercel.app/api/UI/WindUI"))()
+
+local Window = WindUI:CreateWindow({
+    Title = "Projects Cookies 🍪🌐",
+    Icon = "image",
+    Author = ".ftgs",
+    Folder = "Cookies", -- Folder name for saving data (And key)
+    Size = UDim2.fromOffset(580, 460), -- UI Size
+    KeySystem = {
+        Key = "Cookies",
+        Note = "Test Gui",
+        URL = "https://github.com/Footagesus/WindUI", -- URL To get key (example: Discord)
+        SaveKey = true,
+    }, 
+    Transparent = true,
+    Theme = "Dark",
+    SideBarWidth = 170, -- UI Sidebar Width (number)
+    HasOutline = true, -- Adds Oultines to the window
+})
