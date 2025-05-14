@@ -8,50 +8,39 @@ local screenGui = Instance.new("ScreenGui", PlayerGui)
 screenGui.Name = "Nox_SS"
 screenGui.ResetOnSpawn = false
 
-local NoxSS1 = Instance.new("TextButton", screenGui)
-NoxSS1.Text = "↓"
-NoxSS1.Visible = true
-NoxSS1.Size = UDim2.new(0, 30, 0, 30)
-NoxSS1.Position = UDim2.new(0, 610, 0.9, -20)
-NoxSS1.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
-NoxSS1.Font = Enum.Font.Fantasy
-NoxSS1.TextScaled = true
-NoxSS1.BackgroundTransparency = 1
-
-local NoxSS2 = Instance.new("TextButton", screenGui)
-NoxSS2.Text = "↑"
-NoxSS2.Visible = false
-NoxSS2.Size = UDim2.new(0, 30, 0, 30)
-NoxSS2.Position = UDim2.new(0, 610, 0.9, -20)
-NoxSS2.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
-NoxSS2.Font = Enum.Font.Fantasy
-NoxSS2.TextScaled = true
-NoxSS2.BackgroundTransparency = 1
-
 -- Kotak panjang di bawah GUI
 local KP = Instance.new("Frame", screenGui)
 KP.Size = UDim2.new(0, 330, 0, 53)
 KP.Position = UDim2.new(0.480, -150, 1, -60)
 KP.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-
+KP.BackgroundTransparency = 0
 local KPC = Instance.new("UICorner", KP)
 KPC.CornerRadius = UDim.new(0, 12)
+
+local NoxSS1 = Instance.new("TextButton", screenGui)
+NoxSS1.Text = "↓"
+NoxSS1.Size = UDim2.new(0, 30, 0, 30)
+NoxSS1.Position = UDim2.new(00, 540, 0, -35)
+NoxSS1.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+NoxSS1.Font = Enum.Font.Fantasy
+NoxSS1.TextScaled = true
+NoxSS1.BackgroundTransparency = 0
 
 -- Home Button
 local Home = Instance.new("ImageButton", KP)
 Home.Name = "OpenButton"
-Home.Size = UDim2.new(0, 40, 0, 45)
+Home.Size = UDim2.new(0, 45, 0, 45)
 Home.Position = UDim2.new(0, 145, 0, 4)
 Home.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
 Home.Image = "rbxassetid://80453466431812"
-
+Home.BackgroundTransparency = 0.7
 local HomeC = Instance.new("UICorner", Home)
 HomeC.CornerRadius = UDim.new(0, 10)
 
 -- Script Button
 local Script = Instance.new("ImageButton", KP)
 Script.Name = "OpenButton3"
-Script.Size = UDim2.new(0, 40, 0, 45)
+Script.Size = UDim2.new(0, 45, 0, 45)
 Script.Position = UDim2.new(0, 95, 0, 4)
 Script.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
 Script.Image = "rbxassetid://80453466431812"
@@ -84,7 +73,6 @@ Frame_2.Draggable = false
 Instance.new("UIStroke", Frame_2).Color =  Color3.new(5, 5, 5)
 Instance.new("UICorner", Frame_2).CornerRadius = UDim.new(0, 12)
 
--- Scrolling Frame
 local scroll = Instance.new("ScrollingFrame", Frame_2)
 scroll.Size = UDim2.new(0, 194, 0, 193)
 scroll.Position = UDim2.new(0, 3, 0.0, 45)
@@ -92,8 +80,65 @@ scroll.BackgroundColor3 = Color3.new(255, 255, 255)
 scroll.BorderColor3 = Color3.new(0, 0, 0)
 scroll.BorderSizePixel = 1
 scroll.BackgroundTransparency = 1
+scroll.Visible = true
 Instance.new("UIStroke", scroll).Color =  Color3.new(5, 5, 5)
 Instance.new("UICorner", scroll).CornerRadius =  UDim.new(0, 10)
+
+local scroll_2 = Instance.new("ScrollingFrame", Frame_2)
+scroll_2.Size = UDim2.new(0, 194, 0, 193)
+scroll_2.Position = UDim2.new(0, 3, 0.0, 45)
+scroll_2.BackgroundColor3 = Color3.new(255, 255, 255)
+scroll_2.BorderColor3 = Color3.new(0, 0, 0)
+scroll_2.BorderSizePixel = 1
+scroll_2.BackgroundTransparency = 1
+scroll_2.Visible = false
+Instance.new("UIStroke", scroll_2).Color =  Color3.new(5, 5, 5)
+Instance.new("UICorner", scroll_2).CornerRadius =  UDim.new(0, 10)
+
+local scroll_3 = Instance.new("ScrollingFrame", Frame_2)
+scroll_3.Size = UDim2.new(0, 194, 0, 193)
+scroll_3.Position = UDim2.new(0, 3, 0.0, 45)
+scroll_3.BackgroundColor3 = Color3.new(255, 255, 255)
+scroll_3.BorderColor3 = Color3.new(0, 0, 0)
+scroll_3.BorderSizePixel = 1
+scroll_3.BackgroundTransparency = 1
+scroll_3.Visible = false
+Instance.new("UIStroke", scroll_3).Color =  Color3.new(5, 5, 5)
+Instance.new("UICorner", scroll_3).CornerRadius =  UDim.new(0, 10)
+
+-- Tab
+local Tab = Instance.new("TextButton", Frame_2)
+Tab.Position = UDim2.new(0.0, 5, 0, 7)
+Tab.Size = UDim2.new(0, 50, 0, 30)
+Tab.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+Tab.Text = "Script"
+Tab.Font = Enum.Font.Gotham
+Tab.TextColor3 = Color3.new(1, 1, 1)
+Tab.TextSize = 16
+Instance.new("UIStroke", Tab).Color =  Color3.new(5, 5, 5)
+Instance.new("UICorner", Tab).CornerRadius = UDim.new(0, 3)
+
+local Tab_2 = Instance.new("TextButton", Frame_2)
+Tab_2.Position = UDim2.new(0.3, 15, 0, 7)
+Tab_2.Size = UDim2.new(0, 50, 0, 30)
+Tab_2.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+Tab_2.Text = "Gui"
+Tab_2.Font = Enum.Font.Gotham
+Tab_2.TextColor3 = Color3.new(1, 1, 1)
+Tab_2.TextSize = 16
+Instance.new("UIStroke", Tab_2).Color =  Color3.new(5, 5, 5)
+Instance.new("UICorner", Tab_2).CornerRadius = UDim.new(0, 3)
+
+local Tab_3 = Instance.new("TextButton", Frame_2)
+Tab_3.Position = UDim2.new(0.7, 5, 0, 7)
+Tab_3.Size = UDim2.new(0, 50, 0, 30)
+Tab_3.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+Tab_3.Text = "Map"
+Tab_3.Font = Enum.Font.Gotham
+Tab_3.TextColor3 = Color3.new(1, 1, 1)
+Tab_3.TextSize = 16
+Instance.new("UIStroke", Tab_3).Color =  Color3.new(5, 5, 5)
+Instance.new("UICorner", Tab_3).CornerRadius = UDim.new(0, 3)
 
 -- Title
 local title = Instance.new("TextLabel", mainFrame)
@@ -181,20 +226,13 @@ Instance.new("UICorner", executeBtn).CornerRadius = UDim.new(0, 10)
 
 -- KP Frame Function
 NoxSS1.MouseButton1Click:Connect(function()
-	KP.Visible = false
-
-  NoxSS1.Visible = false
-
-  NoxSS2.Visible = true
-end)
-
--- KP Frame Function
-NoxSS2.MouseButton1Click:Connect(function()
-	KP.Visible = true
-
-  NoxSS1.Visible = true
-
-  NoxSS2.Visible = false
+	if KP.Visible then
+		KP.Visible = false
+    NoxSS1.Text = "↑"
+	else
+		KP.Visible = true
+    NoxSS1.Text = "↓"
+	end
 end)
 
 -- Home Function
@@ -215,6 +253,30 @@ Script.MouseButton1Click:Connect(function()
 	end
 end)
 
+Tab.MouseButton1Click:Connect(function()
+   scroll.Visible = true
+
+   scroll_2.Visible = false
+
+   scroll_3.Visible = false
+end)
+
+Tab_2.MouseButton1Click:Connect(function()
+   scroll.Visible = false
+
+   scroll_2.Visible = true
+
+   scroll_3.Visible = false
+end)
+
+Tab_3.MouseButton1Click:Connect(function()
+   scroll.Visible = false
+
+   scroll_2.Visible = false
+
+   scroll_3.Visible = true
+end)
+
 -- Awalnya frame² disembunyikan
 mainFrame.Visible = false
 Frame_2.Visible = false
@@ -224,12 +286,16 @@ local function NoxSS3()
     Frame_2.Visible = false
 end
 
-local function NoxSS4()
-    requireInput.Text = ""
-end
+Clear.MouseButton1Click:Connect(function()
+	if requireInput.Text then
+		  requireInput.Text = ""
+      Clear.Text = "Cleared"
+wait(0.5)
+      Clear.Text = "Clear"
+	end
+end)
 
 NoxSS1.MouseButton1Click:Connect(NoxSS3)
-Clear.MouseButton1Click:Connect(NoxSS4)
 
 -- Hover effect
 
@@ -466,4 +532,117 @@ Instance.new("UICorner", SS_8).CornerRadius = UDim.new(0, 6)
 Instance.new("UIStroke", SS_8).Color =  Color3.new(5, 5, 5)
 SS_8.MouseButton1Click:Connect(function()
     requireInput.Text = 'require(14499140823)("'..Player.Name..'","sorcerer")'
+end)
+
+-- Tab 2
+local Gui = Instance.new("TextButton", scroll_2)
+Gui.Size = UDim2.new(0, 75, 0, 30)
+Gui.Position = UDim2.new(0.0, 15, 0.0, 1)
+Gui.Text = "Team Fat Gui v21"
+Gui.BackgroundColor3 = Color3.new(60, 60, 60)
+Gui.TextColor3 = Color3.new(0, 0, 0)
+Gui.Font = Enum.Font.Gotham
+Gui.TextSize = 8
+Instance.new("UICorner", Gui).CornerRadius = UDim.new(0, 6)
+Instance.new("UIStroke", Gui).Color =  Color3.new(5, 5, 5)
+Gui.MouseButton1Click:Connect(function()
+    requireInput.Text = 'require(14940596979).fat("'..Player.Name..'")'
+end)
+
+local Gui_2 = Instance.new("TextButton", scroll_2)
+Gui_2.Size = UDim2.new(0, 75, 0, 30)
+Gui_2.Position = UDim2.new(0.5, 7, 0.0, 1)
+Gui_2.Text = "K00pgui v11"
+Gui_2.BackgroundColor3 = Color3.new(60, 60, 60)
+Gui_2.TextColor3 = Color3.new(0, 0, 0)
+Gui_2.Font = Enum.Font.Gotham
+Gui_2.TextSize = 8
+Instance.new("UICorner", Gui_2).CornerRadius = UDim.new(0, 6)
+Instance.new("UIStroke", Gui_2).Color =  Color3.new(5, 5, 5)
+Gui_2.MouseButton1Click:Connect(function()
+    requireInput.Text = 'require(15267263357).V11("'..Player.Name..'")'
+end)
+
+local Gui_3 = Instance.new("TextButton", scroll_2)
+Gui_3.Size = UDim2.new(0, 75, 0, 30)
+Gui_3.Position = UDim2.new(0.0, 15, 0.0, 36)
+Gui_3.Text = "H01PK Gui V21"
+Gui_3.BackgroundColor3 = Color3.new(60, 60, 60)
+Gui_3.TextColor3 = Color3.new(0, 0, 0)
+Gui_3.Font = Enum.Font.Gotham
+Gui_3.TextSize = 8
+Instance.new("UICorner", Gui_3).CornerRadius = UDim.new(0, 6)
+Instance.new("UIStroke", Gui_3).Color =  Color3.new(5, 5, 5)
+Gui_3.MouseButton1Click:Connect(function()
+    requireInput.Text = 'require(0x4af2144545ce).ALLNIGGAITISKINGV44LEAKKKkh01pkOnTOP("'..Player.Name..'")'
+end)
+
+local Gui_4 = Instance.new("TextButton", scroll_2)
+Gui_4.Size = UDim2.new(0, 75, 0, 30)
+Gui_4.Position = UDim2.new(0.5, 7, 0.0, 36)
+Gui_4.Text = "Tubers93 Gui v5"
+Gui_4.BackgroundColor3 = Color3.new(60, 60, 60)
+Gui_4.TextColor3 = Color3.new(0, 0, 0)
+Gui_4.Font = Enum.Font.Gotham
+Gui_4.TextSize = 8
+Instance.new("UICorner", Gui_4).CornerRadius = UDim.new(0, 6)
+Instance.new("UIStroke", Gui_4).Color =  Color3.new(5, 5, 5)
+Gui_4.MouseButton1Click:Connect(function()
+    requireInput.Text = 'require(0x6989826cf265)("'..Player.Name..'")'
+end)
+
+local Gui_5 = Instance.new("TextButton", scroll_2)
+Gui_5.Size = UDim2.new(0, 75, 0, 30)
+Gui_5.Position = UDim2.new(0.0, 15, 0.0, 71)
+Gui_5.Text = "Dream Bull Gui v18"
+Gui_5.BackgroundColor3 = Color3.new(60, 60, 60)
+Gui_5.TextColor3 = Color3.new(0, 0, 0)
+Gui_5.Font = Enum.Font.Gotham
+Gui_5.TextSize = 8
+Instance.new("UICorner", Gui_5).CornerRadius = UDim.new(0, 6)
+Instance.new("UIStroke", Gui_5).Color =  Color3.new(5, 5, 5)
+Gui_5.MouseButton1Click:Connect(function()
+    requireInput.Text = 'require(15232587754).DreamGUI("'..Player.Name..'")'
+end)
+
+local Gui_6 = Instance.new("TextButton", scroll_2)
+Gui_6.Size = UDim2.new(0, 75, 0, 30)
+Gui_6.Position = UDim2.new(0.5, 7, 0.0, 71)
+Gui_6.Text = "Cr4kgui v11"
+Gui_6.BackgroundColor3 = Color3.new(60, 60, 60)
+Gui_6.TextColor3 = Color3.new(0, 0, 0)
+Gui_6.Font = Enum.Font.Gotham
+Gui_6.TextSize = 8
+Instance.new("UICorner", Gui_6).CornerRadius = UDim.new(0, 6)
+Instance.new("UIStroke", Gui_6).Color =  Color3.new(5, 5, 5)
+Gui_6.MouseButton1Click:Connect(function()
+    requireInput.Text = 'require(132380103487790).Erika("'..Player.Name..'")'
+end)
+
+local Gui_7 = Instance.new("TextButton", scroll_2)
+Gui_7.Size = UDim2.new(0, 75, 0, 30)
+Gui_7.Position = UDim2.new(0.0, 15, 0.0, 106)
+Gui_7.Text = "p00ngkidd Gui"
+Gui_7.BackgroundColor3 = Color3.new(60, 60, 60)
+Gui_7.TextColor3 = Color3.new(0, 0, 0)
+Gui_7.Font = Enum.Font.Gotham
+Gui_7.TextSize = 8
+Instance.new("UICorner", Gui_7).CornerRadius = UDim.new(0, 6)
+Instance.new("UIStroke", Gui_7).Color =  Color3.new(5, 5, 5)
+Gui_7.MouseButton1Click:Connect(function()
+    requireInput.Text = 'require(15204636597).undetectb("'..Player.Name..'")'
+end)
+
+local Gui_8 = Instance.new("TextButton", scroll_2)
+Gui_8.Size = UDim2.new(0, 75, 0, 30)
+Gui_8.Position = UDim2.new(0.5, 7, 0.0, 106)
+Gui_8.Text = "Darius Gui v13"
+Gui_8.BackgroundColor3 = Color3.new(60, 60, 60)
+Gui_8.TextColor3 = Color3.new(0, 0, 0)
+Gui_8.Font = Enum.Font.Gotham
+Gui_8.TextSize = 8
+Instance.new("UICorner", Gui_8).CornerRadius = UDim.new(0, 6)
+Instance.new("UIStroke", Gui_8).Color =  Color3.new(5, 5, 5)
+Gui_8.MouseButton1Click:Connect(function()
+    requireInput.Text = 'require(127445614272366).op("'..Player.Name..'")'
 end)
