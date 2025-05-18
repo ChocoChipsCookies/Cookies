@@ -25,6 +25,7 @@ NoxSS1.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
 NoxSS1.Font = Enum.Font.Fantasy
 NoxSS1.TextScaled = true
 NoxSS1.BackgroundTransparency = 1
+Instance.new("UIStroke", NoxSS1).Color =  Color3.new(5, 5, 5)
 
 -- Home Button
 local Home = Instance.new("ImageButton", KP)
@@ -227,13 +228,16 @@ Instance.new("UICorner", executeBtn).CornerRadius = UDim.new(0, 10)
 -- KP Frame Function
 NoxSS1.MouseButton1Click:Connect(function()
 	if KP.Visible then
-		KP.Visible = false
+    KP:TweenPosition(UDim2.new(0.480, -150, 1, -2), "Out", "Quart", 2, true)
     NoxSS1.Text = "↑"
-    NoxSS1.Position = UDim2.new(00, 378, 0, 275)
+    NoxSS1:TweenPosition(UDim2.new(0.0, 378, 0.0, 275), "Out", "Quart", 2, true)
+wait(1)
+KP.Visible = false
 	else
-		KP.Visible = true
+    KP:TweenPosition(UDim2.new(0.480, -150, 1, -60), "In", "Quint", 0.3, true)
     NoxSS1.Text = "↓"
-    NoxSS1.Position = UDim2.new(00, 378, 0, 236)
+    NoxSS1:TweenPosition(UDim2.new(0.0, 378, 0.0, 236), "In", "Quint", 0.3, true)
+KP.Visible = true
 	end
 end)
 
