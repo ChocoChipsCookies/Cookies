@@ -5585,3 +5585,6 @@ Tab:AddButton({
         })
     end    
 })
+
+wait(30)
+OrionLib:Destroy()
