@@ -635,6 +635,8 @@ Close_2.MouseButton1Click:Connect(function()
       scroll.Visible = false
       mainFrame.Visible = false
       Frame_2.Visible = false
+      Frame_3.Visible = false
+      time.Visible = false
       Close_2.Visible = false
       Close_3.Visible = true
 	end
@@ -648,6 +650,8 @@ Close_3.MouseButton1Click:Connect(function()
       KP.Size = UDim2.new(0, 460, 0, 300)
       scroll.Visible = true
       Frame_2.Visible = true
+      Frame_3.Visible = true
+      time.Visible = true
       Close_2.Visible = true
       Close_3.Visible = false
 	end
