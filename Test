@@ -70,9 +70,9 @@ wait(0, 1)
 h.Text = "⚠️ THIS GUI IS UNDER [DEVELOPMENT]"
 wait(0, 1)
 h.Text = "⚠️ THIS GUI IS UNDER [DEVELOPMENT!]"
-wait(5)
-h.Text = "⚠️ THIS GUI IS UNDER [DEVELOPMENT] ⚠️"
 wait(0, 1)
+h.Text = "⚠️ THIS GUI IS UNDER [DEVELOPMENT!] ⚠️"
+wait(5)
 h.Text = "⚠️ R"
 wait(0, 1)
 h.Text = "⚠️ RE"
@@ -152,7 +152,9 @@ wait(0, 1)
 h.Text = "⚠️ REPORT TO [@Hydra X] IF YOU SEE SOMETHING WRONG"
 wait(0, 1)
 h.Text = "⚠️ REPORT TO [@Hydra X] IF YOU SEE SOMETHING WRONG!"
-wait(20)
+wait(0, 1)
+h.Text = "⚠️ REPORT TO [@Hydra X] IF YOU SEE SOMETHING WRONG! ⚠️"
+wait(10, 10)
 
 local Players = game:GetService("Players")
 local Player = Players.LocalPlayer
