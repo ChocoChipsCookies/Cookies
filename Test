@@ -227,7 +227,7 @@ Instance.new("UIStroke", Frame_3).Color =  Color3.new(0, 0, 0)
 Instance.new("UICorner", Frame_3).CornerRadius = UDim.new(0, 3)
 
 local Baby_Oil = Instance.new("TextButton", Frame_3)
-Baby_Oil.Position = UDim2.new(0.0, 5, 0, 6)
+Baby_Oil.Position = UDim2.new(0.5, 0, 0, 10)
 Baby_Oil.Size = UDim2.new(0, 80, 0, 35)
 Baby_Oil.BackgroundColor3 = Color3.new(0.054902, 0.0901961, 0.113725)
 Baby_Oil.Text = "muz is gonna add this tab with alot of script fr🗣️🔥💯"
