@@ -155,6 +155,7 @@ h.Text = "⚠️ REPORT TO [@Hydra X] IF YOU SEE SOMETHING WRONG!"
 wait(0, 1)
 h.Text = "⚠️ REPORT TO [@Hydra X] IF YOU SEE SOMETHING WRONG! ⚠️"
 wait(10, 10)
+h:Destroy()
 
 local Players = game:GetService("Players")
 local Player = Players.LocalPlayer
