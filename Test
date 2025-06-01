@@ -1,4 +1,159 @@
 --[Prototipe]--
+wait(2)
+local h = Instance.new("Hint", Workspace)
+h.Text = "⚠️ W"
+wait(0, 1)
+h.Text = "⚠️ WA"
+wait(0, 1)
+h.Text = "⚠️ WAR"
+wait(0, 1)
+h.Text = "⚠️ WARN"
+wait(0, 1)
+h.Text = "⚠️ WARNI"
+wait(0, 1)
+h.Text = "⚠️ WARNIN"
+wait(0, 1)
+h.Text = "⚠️ WARNING ⚠️"
+wait(5)
+h.Text = "⚠️ T"
+wait(0, 1)
+h.Text = "⚠️ TH"
+wait(0, 1)
+h.Text = "⚠️ THI"
+wait(0, 1)
+h.Text = "⚠️ THIS"
+wait(0, 1)
+h.Text = "⚠️ THIS G"
+wait(0, 1)
+h.Text = "⚠️ THIS GU"
+wait(0, 1)
+h.Text = "⚠️ THIS GUI"
+wait(0, 1)
+h.Text = "⚠️ THIS GUI I"
+wait(0, 1)
+h.Text = "⚠️ THIS GUI IS"
+wait(0, 1)
+h.Text = "⚠️ THIS GUI IS U"
+wait(0, 1)
+h.Text = "⚠️ THIS GUI IS UN"
+wait(0, 1)
+h.Text = "⚠️ THIS GUI IS UND"
+wait(0, 1)
+h.Text = "⚠️ THIS GUI IS UNDE"
+wait(0, 1)
+h.Text = "⚠️ THIS GUI IS UNDER"
+wait(0, 1)
+h.Text = "⚠️ THIS GUI IS UNDER ["
+wait(0, 1)
+h.Text = "⚠️ THIS GUI IS UNDER [D"
+wait(0, 1)
+h.Text = "⚠️ THIS GUI IS UNDER [DE"
+wait(0, 1)
+h.Text = "⚠️ THIS GUI IS UNDER [DEV"
+wait(0, 1)
+h.Text = "⚠️ THIS GUI IS UNDER [DEVE"
+wait(0, 1)
+h.Text = "⚠️ THIS GUI IS UNDER [DEVEL"
+wait(0, 1)
+h.Text = "⚠️ THIS GUI IS UNDER [DEVELO"
+wait(0, 1)
+h.Text = "⚠️ THIS GUI IS UNDER [DEVELOP"
+wait(0, 1)
+h.Text = "⚠️ THIS GUI IS UNDER [DEVELOPM"
+wait(0, 1)
+h.Text = "⚠️ THIS GUI IS UNDER [DEVELOPME"
+wait(0, 1)
+h.Text = "⚠️ THIS GUI IS UNDER [DEVELOPMEN"
+wait(0, 1)
+h.Text = "⚠️ THIS GUI IS UNDER [DEVELOPMENT"
+wait(0, 1)
+h.Text = "⚠️ THIS GUI IS UNDER [DEVELOPMENT]"
+wait(0, 1)
+h.Text = "⚠️ THIS GUI IS UNDER [DEVELOPMENT!]"
+wait(5)
+h.Text = "⚠️ THIS GUI IS UNDER [DEVELOPMENT] ⚠️"
+wait(0, 1)
+h.Text = "⚠️ R"
+wait(0, 1)
+h.Text = "⚠️ RE"
+wait(0, 1)
+h.Text = "⚠️ REP"
+wait(0, 1)
+h.Text = "⚠️ REPO"
+wait(0, 1)
+h.Text = "⚠️ REPOR"
+wait(0, 1)
+h.Text = "⚠️ REPORT"
+wait(0, 1)
+h.Text = "⚠️ REPORT T"
+wait(0, 1)
+h.Text = "⚠️ REPORT TO"
+wait(0, 1)
+h.Text = "⚠️ REPORT TO ["
+wait(0, 1)
+h.Text = "⚠️ REPORT TO [@"
+wait(0, 1)
+h.Text = "⚠️ REPORT TO [@H"
+wait(0, 1)
+h.Text = "⚠️ REPORT TO [@Hy"
+wait(0, 1)
+h.Text = "⚠️ REPORT TO [@Hyd"
+wait(0, 1)
+h.Text = "⚠️ REPORT TO [@Hydr"
+wait(0, 1)
+h.Text = "⚠️ REPORT TO [@Hydra"
+wait(0, 1)
+h.Text = "⚠️ REPORT TO [@Hydra X"
+wait(0, 1)
+h.Text = "⚠️ REPORT TO [@Hydra X]"
+wait(0, 1)
+h.Text = "⚠️ REPORT TO [@Hydra X] I"
+wait(0, 1)
+h.Text = "⚠️ REPORT TO [@Hydra X] IF"
+wait(0, 1)
+h.Text = "⚠️ REPORT TO [@Hydra X] IF Y"
+wait(0, 1)
+h.Text = "⚠️ REPORT TO [@Hydra X] IF YO"
+wait(0, 1)
+h.Text = "⚠️ REPORT TO [@Hydra X] IF YOU"
+wait(0, 1)
+h.Text = "⚠️ REPORT TO [@Hydra X] IF YOU S"
+wait(0, 1)
+h.Text = "⚠️ REPORT TO [@Hydra X] IF YOU SE"
+wait(0, 1)
+h.Text = "⚠️ REPORT TO [@Hydra X] IF YOU SEE"
+wait(0, 1)
+h.Text = "⚠️ REPORT TO [@Hydra X] IF YOU SEE S"
+wait(0, 1)
+h.Text = "⚠️ REPORT TO [@Hydra X] IF YOU SEE SO"
+wait(0, 1)
+h.Text = "⚠️ REPORT TO [@Hydra X] IF YOU SEE SOM"
+wait(0, 1)
+h.Text = "⚠️ REPORT TO [@Hydra X] IF YOU SEE SOME"
+wait(0, 1)
+h.Text = "⚠️ REPORT TO [@Hydra X] IF YOU SEE SOMET"
+wait(0, 1)
+h.Text = "⚠️ REPORT TO [@Hydra X] IF YOU SEE SOMETH"
+wait(0, 1)
+h.Text = "⚠️ REPORT TO [@Hydra X] IF YOU SEE SOMETHI"
+wait(0, 1)
+h.Text = "⚠️ REPORT TO [@Hydra X] IF YOU SEE SOMETHIN"
+wait(0, 1)
+h.Text = "⚠️ REPORT TO [@Hydra X] IF YOU SEE SOMETHING"
+wait(0, 1)
+h.Text = "⚠️ REPORT TO [@Hydra X] IF YOU SEE SOMETHING W"
+wait(0, 1)
+h.Text = "⚠️ REPORT TO [@Hydra X] IF YOU SEE SOMETHING WR"
+wait(0, 1)
+h.Text = "⚠️ REPORT TO [@Hydra X] IF YOU SEE SOMETHING WRO"
+wait(0, 1)
+h.Text = "⚠️ REPORT TO [@Hydra X] IF YOU SEE SOMETHING WRON"
+wait(0, 1)
+h.Text = "⚠️ REPORT TO [@Hydra X] IF YOU SEE SOMETHING WRONG"
+wait(0, 1)
+h.Text = "⚠️ REPORT TO [@Hydra X] IF YOU SEE SOMETHING WRONG!"
+wait(20)
+
 local Players = game:GetService("Players")
 local Player = Players.LocalPlayer
 local PlayerGui = Player:WaitForChild("PlayerGui")
