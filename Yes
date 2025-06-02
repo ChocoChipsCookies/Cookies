@@ -5,6 +5,7 @@ function Nofitication:Notify(nofdebug, middledebug, all)
     local SelectedType = string.lower(tostring(middledebug.Type))
     local ambientShadow = Instance.new("ImageLabel")
     local Window = Instance.new("Frame")
+    local image = Instance.new("ImageLabel")
     local Outline_A = Instance.new("Frame")
     local WindowTitle = Instance.new("TextLabel")
     local WindowDescription = Instance.new("TextLabel")
@@ -29,6 +30,20 @@ function Nofitication:Notify(nofdebug, middledebug, all)
     Window.Position = UDim2.new(0, 5, 0, 5)
     Window.Size = UDim2.new(0, 230, 0, 80)
     Window.ZIndex = 2
+    
+    image.Size = UDim2.new(0, 20, 0, 20)
+    image.Position = UDim2.new(0, 8, 0, 2)
+    image.Image = "rbxassetid://10367063073"
+    image.Parent = Window
+    
+    local uic = Instance.new("UICorner")
+    uic.CornerRadius = UDim.new(1)
+    uic.Parent = image
+
+    local uis = Instance.new("UIStroke")
+    uis.Color = Color3.new(5, 5, 5)
+    uis.Thickness = 2
+    uis.Parent = image
     
     Outline_A.Name = "Outline_A"
     Outline_A.Parent = Window
@@ -65,7 +80,7 @@ function Nofitication:Notify(nofdebug, middledebug, all)
     WindowDescription.Font = Enum.Font.GothamSemibold
     WindowDescription.Text = nofdebug.Description
     WindowDescription.TextColor3 = Color3.fromRGB(180, 180, 180)
-    WindowDescription.TextSize = 12.000
+    WindowDescription.TextSize = 12
     WindowDescription.TextWrapped = true
     WindowDescription.TextXAlignment = Enum.TextXAlignment.Left
     WindowDescription.TextYAlignment = Enum.TextYAlignment.Top
