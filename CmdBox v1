@@ -1,0 +1,151 @@
+--// Admin CmdBox V3 - With Open/Close Animation
+local Players = game:GetService("Players")
+local LocalPlayer = Players.LocalPlayer
+local Camera = workspace.CurrentCamera
+local TweenService = game:GetService("TweenService")
+local Lighting = game:GetService("Lighting")
+
+-- GUI
+local gui = Instance.new("ScreenGui", LocalPlayer:WaitForChild("PlayerGui"))
+gui.Name = "CmdBoxV3"
+gui.ResetOnSpawn = false
+
+-- Blur effect
+local blur = Instance.new("BlurEffect")
+blur.Size = 12
+blur.Enabled = false
+blur.Parent = Lighting
+
+-- Open Button "+"
+local openBtn = Instance.new("TextButton", gui)
+openBtn.Size = UDim2.new(0, 40, 0, 40)
+openBtn.Position = UDim2.new(1, -50, 0, 10)
+openBtn.Text = "+"
+openBtn.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
+openBtn.TextColor3 = Color3.new(1, 1, 1)
+openBtn.Font = Enum.Font.GothamBold
+openBtn.TextSize = 24
+openBtn.AnchorPoint = Vector2.new(0.5, 0)
+openBtn.Name = "OpenButton"
+openBtn.BorderSizePixel = 0
+openBtn.AutoButtonColor = true
+openBtn.BackgroundTransparency = 0
+
+local uicornerBtn = Instance.new("UICorner", openBtn)
+uicornerBtn.CornerRadius = UDim.new(1, 0)
+
+-- CmdBox Frame
+local cmdBox = Instance.new("Frame", gui)
+cmdBox.Size = UDim2.new(0, 400, 0, 45)
+cmdBox.Position = UDim2.new(0.5, 0, 1, 100) -- Start hidden below screen
+cmdBox.AnchorPoint = Vector2.new(0.5, 0)
+cmdBox.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+cmdBox.BorderSizePixel = 0
+cmdBox.Visible = true -- Tetap true, tapi animasi sembunyi
+
+local uicornerCmd = Instance.new("UICorner", cmdBox)
+uicornerCmd.CornerRadius = UDim.new(0, 10)
+
+local gradient = Instance.new("UIGradient", cmdBox)
+gradient.Color = ColorSequence.new{
+	ColorSequenceKeypoint.new(0.0, Color3.fromRGB(0, 183, 255)),
+	ColorSequenceKeypoint.new(0.5, Color3.fromRGB(147, 0, 255)),
+	ColorSequenceKeypoint.new(1.0, Color3.fromRGB(255, 0, 110))
+}
+
+local leftSymbol = Instance.new("TextLabel", cmdBox)
+leftSymbol.Size = UDim2.new(0, 20, 1, 0)
+leftSymbol.Position = UDim2.new(0, 0, 0, 0)
+leftSymbol.Text = ">"
+leftSymbol.BackgroundTransparency = 1
+leftSymbol.Font = Enum.Font.GothamBold
+leftSymbol.TextSize = 20
+leftSymbol.TextColor3 = Color3.new(1, 1, 1)
+
+local rightSymbol = Instance.new("TextLabel", cmdBox)
+rightSymbol.Size = UDim2.new(0, 20, 1, 0)
+rightSymbol.Position = UDim2.new(1, -20, 0, 0)
+rightSymbol.Text = "<"
+rightSymbol.BackgroundTransparency = 1
+rightSymbol.Font = Enum.Font.GothamBold
+rightSymbol.TextSize = 20
+rightSymbol.TextColor3 = Color3.new(1, 1, 1)
+
+local inputBox = Instance.new("TextBox", cmdBox)
+inputBox.Size = UDim2.new(1, -60, 1, -10)
+inputBox.Position = UDim2.new(0, 30, 0, 5)
+inputBox.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+inputBox.Font = Enum.Font.Gotham
+inputBox.TextSize = 16
+inputBox.TextColor3 = Color3.new(1, 1, 1)
+inputBox.PlaceholderText = "Enter Admin Command..."
+inputBox.BorderSizePixel = 0
+
+local uicornerInput = Instance.new("UICorner", inputBox)
+uicornerInput.CornerRadius = UDim.new(0, 8)
+
+-- Toggle with animation
+local boxOpened = false
+local function toggleCmdBox(state)
+	boxOpened = state
+	blur.Enabled = state
+
+	local goalPos = state and UDim2.new(0.5, 0, 1, -70) or UDim2.new(0.5, 0, 1, 100)
+	local tween = TweenService:Create(cmdBox, TweenInfo.new(0.4, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {
+		Position = goalPos
+	})
+	tween:Play()
+end
+
+openBtn.MouseButton1Click:Connect(function()
+	toggleCmdBox(not boxOpened)
+end)
+
+-- Find Player Helper
+local function findPlayer(name)
+	name = name:lower()
+	for _, plr in ipairs(Players:GetPlayers()) do
+		if plr.Name:lower():sub(1, #name) == name or plr.DisplayName:lower():sub(1, #name) == name then
+			return plr
+		end
+	end
+end
+
+-- Command Handler
+inputBox.FocusLost:Connect(function(enter)
+	if not enter then return end
+
+	local args = inputBox.Text:split(" ")
+	local cmd = args[1]:lower()
+	local target = args[2] and findPlayer(args[2])
+
+	if cmd == "to" and target then
+		LocalPlayer.Character:PivotTo(target.Character:GetPivot())
+
+	elseif cmd == "view" and target then
+		Camera.CameraSubject = target.Character:FindFirstChild("Humanoid")
+
+	elseif cmd == "unview" then
+		Camera.CameraSubject = LocalPlayer.Character:FindFirstChild("Humanoid")
+
+	elseif cmd == "tweentp" and target then
+		local root = LocalPlayer.Character:FindFirstChild("HumanoidRootPart")
+		local tween = TweenService:Create(root, TweenInfo.new(0.4), {CFrame = target.Character:GetPivot()})
+		tween:Play()
+
+	elseif cmd == "freeze" then
+		LocalPlayer.Character:FindFirstChild("HumanoidRootPart").Anchored = true
+
+	elseif cmd == "unfreeze" then
+		LocalPlayer.Character:FindFirstChild("HumanoidRootPart").Anchored = false
+
+	elseif cmd == "sit" then
+		LocalPlayer.Character:FindFirstChild("Humanoid").Sit = true
+
+	elseif cmd == "jump" then
+		LocalPlayer.Character:FindFirstChild("Humanoid"):ChangeState(Enum.HumanoidStateType.Jumping)
+	end
+
+	inputBox.Text = ""
+	toggleCmdBox(false)
+end)
