@@ -95,8 +95,8 @@ Toggle.Draggable = true
 UIStroke.Color =  Color3.new(5, 5, 5)
 UIStroke.Parent = Toggle
 
-UICorner.CornerRadius = UDim.new(9, 12)
-UICorner.Parent = Toggle
+UICorner_6.CornerRadius = UDim.new(3, 0)
+UICorner_6.Parent = Toggle
 
 Main.Name = "Main"
 Main.Parent = Monke
