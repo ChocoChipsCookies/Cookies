@@ -118,7 +118,7 @@ Toggle.Text = "Open"
 Toggle.Font = Enum.Font.Gotham
 Toggle.TextColor3 = Color3.new(0, 0, 0)
 Toggle.TextSize = 14
-Toggle.Enable = false
+Toggle.Visible = false
 Toggle.Active = true
 Toggle.Draggable = true
 
@@ -837,15 +837,16 @@ end))
 
 
 --// Other UI Stuff
-Toggle.MouseButton1Click:Connect(function()
-     Toggle.Enabled=false
-     Main.Enable=true
+minimize.MouseButton1Click:Connect(function()
+     Toggle.Visible=true
+     Main.Visible=false
 end)
 
-minimize.MouseButton1Click:Connect(function()
-     Toggle.Enabled=true
-     Main.Enable=false
+Toggle.MouseButton1Click:Connect(function()
+     Toggle.Visible=false
+     Main.Visible=true
 end)
+
 
 uis.InputBegan:Connect(function(k)
 	if k.KeyCode==Enum.KeyCode.LeftAlt then
