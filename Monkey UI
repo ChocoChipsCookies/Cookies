@@ -117,8 +117,6 @@ topbar.ZIndex = 3
 topbar.Image = "http://www.roblox.com/asset/?id=6373963359"
 topbar.ImageColor3 = Color3.fromRGB(25, 25, 25)
 topbar.ImageTransparency = 1.000
-topbar.Active = true
-topbar.Draggable = true
 
 title.Name = "title"
 title.Parent = topbar
@@ -278,6 +276,9 @@ DropdownFrame.ZIndex = -2
 DropdownFrame.Image = "http://www.roblox.com/asset/?id=6374072464"
 DropdownFrame.ImageTransparency = 0.800
 DropdownFrame.ScaleType = Enum.ScaleType.Crop
+DropdownFrame.Active = true
+DropdownFrame.Draggable = true
+
 
 Dropdownglow.Name = "Dropdownglow"
 Dropdownglow.Parent = DropdownFrame
