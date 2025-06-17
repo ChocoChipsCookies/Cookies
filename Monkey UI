@@ -55,6 +55,8 @@ local sliderfull = Instance.new("TextButton")
 local UICorner_4 = Instance.new("UICorner")
 local sliderpart = Instance.new("TextButton")
 local UICorner_5 = Instance.new("UICorner")
+local UICorner_6 = Instance.new("UICorner")
+local UIStroke = Instance.new("UIStroke")
 local slidervalue = Instance.new("TextLabel")
 local ColorpickerFrame = Instance.new("ImageLabel")
 local Dropdownglow_2 = Instance.new("ImageLabel")
@@ -89,6 +91,12 @@ Toggle.TextSize = 14
 Toggle.Visible = false
 Toggle.Active = true
 Toggle.Draggable = true
+
+UIStroke.Color =  Color3.new(5, 5, 5)
+UIStroke.Parent = Toggle
+
+UICorner.CornerRadius = UDim.new(2, 0)
+UICorner.Parent = Toggle
 
 Main.Name = "Main"
 Main.Parent = Monke
