@@ -77,6 +77,19 @@ Monke.Parent = game.CoreGui
 Monke.DisplayOrder = 59666
 Monke.ResetOnSpawn = false
 
+Toggle.Parent = Monke
+Toggle.Name = "OpenButton"
+Toggle.Size = UDim2.new(0, 50, 0, 50)
+Toggle.Position = UDim2.new(0.5, 0, 0.0, 0)
+Toggle.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+Toggle.Text = "Open"
+Toggle.Font = Enum.Font.Gotham
+Toggle.TextColor3 = Color3.new(0, 0, 0)
+Toggle.TextSize = 14
+Toggle.Visible = false
+Toggle.Active = true
+Toggle.Draggable = true
+
 Main.Name = "Main"
 Main.Parent = Monke
 Main.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
@@ -108,19 +121,6 @@ minimize.Size = UDim2.new(0, 44, 0, 28)
 minimize.ZIndex = 4
 minimize.AutoButtonColor = false
 minimize.Image = "http://www.roblox.com/asset/?id=6351051603"
-
-Toggle.Parent = Monke
-Toggle.Name = "OpenButton"
-Toggle.Size = UDim2.new(0, 50, 0, 50)
-Toggle.Position = UDim2.new(0.5, 0, 0.0, 0)
-Toggle.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
-Toggle.Text = "Open"
-Toggle.Font = Enum.Font.Gotham
-Toggle.TextColor3 = Color3.new(0, 0, 0)
-Toggle.TextSize = 14
-Toggle.Visible = false
-Toggle.Active = true
-Toggle.Draggable = true
 
 topbar.Name = "topbar"
 topbar.Parent = Main
@@ -837,16 +837,15 @@ end))
 
 
 --// Other UI Stuff
-minimize.MouseButton1Click:Connect(function()
-     Toggle.Visible=true
-     Main.Visible=false
-end)
-
 Toggle.MouseButton1Click:Connect(function()
-     Toggle.Visible=false
-     Main.Visible=true
+     Toggle.Visible = false
+     Main.Visible = true
 end)
 
+minimize.MouseButton1Click:Connect(function()
+     Toggle.Visible = true
+     Main.Visible = false
+end)
 
 uis.InputBegan:Connect(function(k)
 	if k.KeyCode==Enum.KeyCode.LeftAlt then
