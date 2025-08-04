@@ -33,7 +33,7 @@ H:Remove()
 
 wait(0.1)
 local player = game.Players.LocalPlayer
-local ownerId = 0
+local ownerId = 7622620256
 if player.UserId ~= ownerId then
     OrionLib.Visible = false  -- Hide the button for non-owners
 else
