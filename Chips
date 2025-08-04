@@ -32,6 +32,13 @@ wait(5)
 H:Remove()
 
 wait(0.1)
+local player = game.Players.LocalPlayer
+local ownerId = 0
+if player.UserId ~= ownerId then
+    button.Visible = false  -- Hide the button for non-owners
+else
+    button.Visible = true   -- Show the button for the owner
+end
 -- Orion Library --
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/DenDenZZZ/Orion-UI-Library/refs/heads/main/source')))()
 
@@ -5585,6 +5592,3 @@ Tab:AddButton({
         })
     end    
 })
-
-wait(30)
-OrionLib:Destroy()
