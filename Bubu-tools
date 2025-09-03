@@ -27,8 +27,16 @@ Section:CreateButton("Better Walk-Fling", function()
 loadstring(game:HttpGet("https://pastefy.app/Vf5POrA6/raw"))()
 end)
 
+Section:CreateButton("Killbrick toggle", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/kpJcVXDQ"))()
+end)
+
 Section:CreateButton("Freeze Cam", function()
 loadstring(game:HttpGet("https://pastefy.app/ahboiRMS/raw"))();
+end)
+
+Section:CreateButton("Spectate gui", function()
+loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Natural-Disasters-Spectate-gui-17403"))()
 end)
 
 Section:CreateButton("TpTool", function()
@@ -56,6 +64,10 @@ end)
 
 Section:CreateButton("Reach Gui v3", function()
 loadstring(game:HttpGet("https://pastebin.com/raw/wTw3sJZK"))();
+end)
+
+Section:CreateButton("Open Aimbot", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ttwizz/Open-Aimbot/master/source.lua", true))()
 end)
 
 Section:CreateButton("MinhNhat Hub", function()
