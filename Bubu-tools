@@ -9,10 +9,10 @@ local Library = loadstring(Game:HttpGet("https://raw.githubusercontent.com/blood
  
 -- [Window/Tab/Section]
 local Window = Library:NewWindow("Script tools")
-local Section = Window:NewSection("Script")
+local Section = Window:NewSection("File Script")
 
-Section:CreateButton("Fire Click + Free Cam", function()
-loadstring(game:HttpGet("https://pastebin.com/raw/ujwGaXSc"))();
+Section:CreateButton("Free Cam", function()
+loadstring(game:HttpGet("https://pastefy.app/Wfyo44ZS/raw"))();
 end)
 
 Section:CreateButton("Fly Gui v3", function()
@@ -39,16 +39,48 @@ Section:CreateButton("Spectate gui", function()
 loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Natural-Disasters-Spectate-gui-17403"))()
 end)
 
-Section:CreateButton("TpTool", function()
-loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Tptools-41801"))()
+Section:CreateButton("Esp", function()
+loadstring(game:HttpGet("https://pastefy.app/4Lmd9u1l/raw"))();
 end)
 
-Section:CreateButton("Mirage tools", function()
-loadstring(game:HttpGet("https://pastefy.app/MAhHb1Ia/raw"))();
+Section:CreateButton("FPS Boost", function()
+loadstring(game:HttpGet("https://pastefy.app/Uu0LK378/raw"))();
 end)
 
 Section:CreateButton("Anti-Bang", function()
 loadstring(game:HttpGet("https://pastefy.app/EYXzo3lX/raw"))();
+end)
+
+local Section = Window:NewSection("File Script-2")
+
+Section:CreateButton("Fling gui", function()
+loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Fling-gui-troll-17597"))()
+end)
+
+Section:CreateButton("F3X Gui", function()
+loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Average-F3X-Gui-38529"))()
+end)
+
+Section:CreateButton("Harked v2", function()
+loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Harked-V2-only-works-on-some-games-36540"))()
+end)
+
+Section:CreateButton("Comet", function()
+loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Comet-6769"))()
+end)
+
+local Section = Window:NewSection("Tools")
+
+Section:CreateButton("TpTool", function()
+loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Tptools-41801"))()
+end)
+
+Section:CreateButton("Fire Part", function()
+loadstring(game:HttpGet("https://pastefy.app/9VqXbSoC/raw"))();
+end)
+
+Section:CreateButton("Mirage tools", function()
+loadstring(game:HttpGet("https://pastefy.app/MAhHb1Ia/raw"))();
 end)
 
 -- [Gui]
